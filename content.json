@@ -1,0 +1,3227 @@
+{
+  "meta": {
+    "course": "Introductory Biology (Biology: Concepts and Investigations)",
+    "schemaVersion": 1,
+    "note": "Content vetted against the textbook. Each item is tagged by chapter and section. Expand by adding items to the flashcards/quiz arrays following the same shape."
+  },
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "The Scientific Study of Life",
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "What Is Life?"
+        },
+        {
+          "id": "1.2",
+          "title": "The Tree of Life Has Three Domains"
+        },
+        {
+          "id": "1.3",
+          "title": "Scientists Study the Natural World"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch1-fc-001",
+          "section": "1.1",
+          "front": "What are the five characteristics shared by all living things?",
+          "back": "Organization, energy use (metabolism), homeostasis, reproduction/growth/development, and evolution. An entity must show ALL five to be considered alive.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-002",
+          "section": "1.1",
+          "front": "List the levels of biological organization from smallest to largest.",
+          "back": "Atom → molecule → organelle → cell → tissue → organ → organ system → organism → population → community → ecosystem → biosphere.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-003",
+          "section": "1.1",
+          "front": "Define emergent property.",
+          "back": "A new function that arises from the interactions among a system's components and does not exist in any single component alone (e.g., memory emerges from networked neurons, not one neuron).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-004",
+          "section": "1.1",
+          "front": "Autotroph vs. heterotroph — define each. What's the key wording trap?",
+          "back": "Autotrophs CONVERT energy from a nonliving source (e.g., sunlight) into chemical energy in food. Heterotrophs obtain energy by consuming other organisms (living or dead). Trap: autotrophs do not 'produce' energy — energy cannot be created.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-005",
+          "section": "1.1",
+          "front": "What is homeostasis?",
+          "back": "Maintaining stable internal conditions despite external changes (e.g., body temperature near 37°C, blood pH near 7.4) via sense-and-counteract feedback loops.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-006",
+          "section": "1.2",
+          "front": "Name the three domains of life and their cell type.",
+          "back": "Bacteria (prokaryotic), Archaea (prokaryotic), Eukarya (eukaryotic).",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-007",
+          "section": "1.2",
+          "front": "Why are Bacteria and Archaea in separate domains if both are prokaryotic?",
+          "back": "Their DNA sequences, membrane chemistry, and other molecular features are fundamentally different. They are as genetically distinct from each other as either is from eukaryotes.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-008",
+          "section": "1.2",
+          "front": "What distinguishes the four groups within Eukarya by nutrition?",
+          "back": "Plantae: autotrophs (photosynthesis). Fungi: heterotrophs, external digestion then absorption. Animalia: heterotrophs, ingestion (internal digestion). Protista: artificial 'everything else' group of eukaryotes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-009",
+          "section": "1.3",
+          "front": "Define hypothesis (precisely).",
+          "back": "A tentative, testable, falsifiable EXPLANATION for an observation. Not a guess; not a prediction.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-010",
+          "section": "1.3",
+          "front": "How does a prediction differ from a hypothesis?",
+          "back": "A hypothesis is the proposed explanation; a prediction is the specific measurable outcome expected if the hypothesis is true, usually phrased as an if-then statement.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-011",
+          "section": "1.3",
+          "front": "Hypothesis vs. theory in science.",
+          "back": "A hypothesis explains a specific observation with limited evidence. A theory is a broad explanation supported by many independent lines of evidence with strong predictive power. Both are testable and falsifiable; a theory is wider in scope and far better supported.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-012",
+          "section": "1.3",
+          "front": "Can a hypothesis ever be proven true? Why or why not?",
+          "back": "No. It can be supported or rejected by evidence but never proven with certainty, because future evidence could always contradict current results. This is falsifiability.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-013",
+          "section": "1.3",
+          "front": "Independent vs. dependent variable.",
+          "back": "Independent variable = what the researcher deliberately changes (the cause). Dependent variable = what is measured (the effect); it depends on the independent variable.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-014",
+          "section": "1.3",
+          "front": "What is a control group and why use a placebo?",
+          "back": "The control group receives no treatment (or a placebo) to provide a baseline for comparison. A placebo controls for the psychological effect of receiving a treatment so any difference can be attributed to the real treatment.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-fc-015",
+          "section": "1.3",
+          "front": "What is peer review?",
+          "back": "Evaluation of a study's methods, reasoning, and conclusions by independent experts before publication. It is the quality-control system of science.",
+          "difficulty": "easy",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch1-q-001",
+          "section": "1.1",
+          "question": "A car burns fuel, maintains a set internal temperature, and is highly organized. Why is it not considered alive?",
+          "choices": [
+            "It does not use energy",
+            "It is not organized",
+            "It cannot reproduce, grow/develop, or evolve — it lacks all five characteristics",
+            "It has no moving parts"
+          ],
+          "answerIndex": 2,
+          "explanation": "Life requires ALL five characteristics. A car shows a few but cannot reproduce, grow/develop, or evolve.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-q-002",
+          "section": "1.1",
+          "question": "Which statement about autotrophs is correct?",
+          "choices": [
+            "They produce energy from nothing",
+            "They convert energy from a nonliving source into chemical energy",
+            "They obtain energy only by eating other organisms",
+            "They cannot store energy"
+          ],
+          "answerIndex": 1,
+          "explanation": "Autotrophs convert (not produce) energy from sources like sunlight into chemical energy stored in food.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-003",
+          "section": "1.2",
+          "question": "What do Bacteria and Archaea have in common?",
+          "choices": [
+            "Both have a nucleus",
+            "Both are eukaryotic",
+            "Both are prokaryotic (no nucleus, no membrane-bound organelles)",
+            "Both have identical membrane chemistry"
+          ],
+          "answerIndex": 2,
+          "explanation": "Both are prokaryotic. Their membrane chemistry and DNA differ, which is why they are separate domains.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-004",
+          "section": "1.2",
+          "question": "Fungi and animals are both heterotrophs. How do they differ in obtaining food?",
+          "choices": [
+            "Fungi photosynthesize; animals ingest",
+            "Fungi digest externally and absorb; animals ingest and digest internally",
+            "Animals digest externally; fungi ingest",
+            "They obtain food identically"
+          ],
+          "answerIndex": 1,
+          "explanation": "Fungi secrete enzymes to digest food externally, then absorb nutrients. Animals ingest food and digest it internally.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-005",
+          "section": "1.3",
+          "question": "A researcher gives 50 patients green tea and 50 patients water daily for 8 weeks, then measures blood pressure. What is the dependent variable?",
+          "choices": [
+            "The green tea",
+            "Blood pressure",
+            "The 8-week duration",
+            "The number of patients"
+          ],
+          "answerIndex": 1,
+          "explanation": "Blood pressure is measured (the effect), so it is the dependent variable. Green tea is the independent variable.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-q-006",
+          "section": "1.3",
+          "question": "Which best describes a scientific theory?",
+          "choices": [
+            "A guess that hasn't been tested",
+            "A broad explanation supported by many lines of evidence with predictive power",
+            "A single testable prediction",
+            "An opinion held by most scientists"
+          ],
+          "answerIndex": 1,
+          "explanation": "In science, a theory is the highest-confidence explanation: broad, heavily evidenced, and predictive.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-007",
+          "section": "1.3",
+          "question": "Why must a scientific hypothesis be falsifiable?",
+          "choices": [
+            "So it can be proven true permanently",
+            "So there is some possible result that could prove it wrong",
+            "So it never needs testing",
+            "So it matches the theory"
+          ],
+          "answerIndex": 1,
+          "explanation": "Falsifiability means a possible observation could disprove it; untestable claims are not scientific.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch1-q-008",
+          "section": "1.3",
+          "question": "A study tests a drug on only 5 people. A critic says the sample is too small. Why does sample size matter?",
+          "choices": [
+            "Larger samples make experiments faster",
+            "Larger samples reduce the chance that results are due to random variation, making conclusions more reliable",
+            "Smaller samples are always more accurate",
+            "Sample size only matters in observational studies"
+          ],
+          "answerIndex": 1,
+          "explanation": "A larger sample size reduces the probability that an outcome is due to chance rather than the variable being tested, increasing the statistical reliability of the conclusion.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-009",
+          "section": "1.3",
+          "question": "In a double-blind drug trial, neither patients nor researchers know who received the real drug. This design eliminates:",
+          "choices": [
+            "The need for a control group",
+            "Observer bias and the placebo effect from skewing results",
+            "The need for statistical analysis",
+            "Ethical concerns about the experiment"
+          ],
+          "answerIndex": 1,
+          "explanation": "Double-blind design prevents researchers from unconsciously influencing data collection (observer bias) and prevents patients from feeling better simply because they believe they are being treated (placebo effect).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-010",
+          "section": "1.1",
+          "question": "At which level of biological organization does LIFE first appear — the simplest unit considered to be alive?",
+          "choices": [
+            "Molecule",
+            "Organelle",
+            "Cell",
+            "Tissue"
+          ],
+          "answerIndex": 2,
+          "explanation": "The cell is the basic unit of life. Molecules and organelles are essential components but are not alive on their own. No level below the cell meets all five characteristics of life.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-q-011",
+          "section": "1.2",
+          "question": "Which domain includes ALL organisms whose cells contain membrane-bound nuclei?",
+          "choices": [
+            "Bacteria",
+            "Archaea",
+            "Eukarya",
+            "Prokaryota"
+          ],
+          "answerIndex": 2,
+          "explanation": "Eukarya — protists, fungi, plants, and animals — all have membrane-bound nuclei. Bacteria and Archaea are prokaryotic; their DNA resides in a nucleoid region, not a membrane-bound nucleus.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-q-012",
+          "section": "1.3",
+          "question": "A researcher watches lions hunt in the wild and records prey choices without changing anything. This study is:",
+          "choices": [
+            "A controlled experiment with a treatment group",
+            "An observational study — no variables were manipulated",
+            "A double-blind experiment",
+            "A case study with a placebo group"
+          ],
+          "answerIndex": 1,
+          "explanation": "An observational (descriptive) study records what occurs in nature without manipulating variables. It can identify correlations but cannot establish cause-and-effect on its own.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-013",
+          "section": "1.3",
+          "question": "Natural selection acts on _______, but evolution is a change in _______ over generations.",
+          "choices": [
+            "populations; individual traits",
+            "individuals; allele frequencies in populations",
+            "alleles; single organisms",
+            "species; ecosystems"
+          ],
+          "answerIndex": 1,
+          "explanation": "Natural selection acts on heritable variation among individuals. Evolution, however, is defined at the population level as a change in allele frequencies over time — not change within a single organism.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch1-q-014",
+          "section": "1.3",
+          "question": "What is the primary purpose of peer review before scientific publication?",
+          "choices": [
+            "To make research available to the public faster",
+            "To secure funding for future experiments",
+            "To have independent experts evaluate methods, data, and conclusions for errors and bias",
+            "To ensure the researcher is compensated"
+          ],
+          "answerIndex": 2,
+          "explanation": "Peer review is science's quality-control system: independent experts critique the study's design, data, and interpretation before publication, catching errors and preventing flawed findings from entering the literature.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch1-q-015",
+          "section": "1.3",
+          "question": "A classmate says, 'Evolution is just a theory — it might not be true.' The best scientific response is:",
+          "choices": [
+            "Agree; theories are unproven guesses that could easily be wrong",
+            "In science, a theory is the highest-confidence explanation: broad, predictive, and supported by many independent lines of evidence",
+            "A theory becomes a fact once enough scientists accept it",
+            "Theories only apply to simple phenomena, not complex ones like evolution"
+          ],
+          "answerIndex": 1,
+          "explanation": "In everyday speech, 'theory' means a guess. In science, a theory is a rigorously tested, broadly supported explanation with predictive power. The theory of evolution is backed by the fossil record, molecular biology, biogeography, and observed speciation.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch1-q-016",
+          "section": "ch1-s1",
+          "difficulty": "easy",
+          "question": "Which of the following is an example of an emergent property?",
+          "choices": [
+            "The individual sodium atom's charge",
+            "A single neuron's electrical signal",
+            "Consciousness arising from billions of interacting neurons",
+            "The atomic mass of carbon"
+          ],
+          "answerIndex": 2,
+          "explanation": "Emergent properties arise from interactions among components — no single neuron is conscious, but billions networked together produce consciousness. Life itself is an emergent property of interacting chemicals."
+        },
+        {
+          "id": "ch1-q-017",
+          "section": "ch1-s2",
+          "difficulty": "medium",
+          "question": "In deductive reasoning, a scientist:",
+          "choices": [
+            "Observes many specific cases and forms a general principle",
+            "Applies a general principle to predict a specific, testable outcome",
+            "Proves a hypothesis is definitely true",
+            "Collects data without any prior hypothesis"
+          ],
+          "answerIndex": 1,
+          "explanation": "Deductive reasoning moves from general to specific: 'If my hypothesis is true, then I predict this specific outcome.' Inductive reasoning moves from many specific observations to a general principle."
+        },
+        {
+          "id": "ch1-q-018",
+          "section": "ch1-s1",
+          "difficulty": "easy",
+          "question": "Which is the CORRECT order of levels of biological organization from smallest to largest?",
+          "choices": [
+            "Atom → cell → molecule → tissue → organ → organism",
+            "Atom → molecule → organelle → cell → tissue → organ → organ system → organism → population → community → ecosystem → biosphere",
+            "Cell → molecule → tissue → organ → organism → biosphere",
+            "Organelle → atom → cell → organ → population"
+          ],
+          "answerIndex": 1,
+          "explanation": "The hierarchy runs: atom → molecule → organelle → cell → tissue → organ → organ system → organism → population → community → ecosystem → biosphere. Each level has emergent properties not present at the level below."
+        },
+        {
+          "id": "ch1-q-019",
+          "section": "ch1-s2",
+          "difficulty": "easy",
+          "question": "Homeostasis is best defined as:",
+          "choices": [
+            "The tendency for systems to increase entropy over time",
+            "Maintaining a relatively stable internal environment despite external changes",
+            "The process of converting one form of energy to another",
+            "The cycling of nutrients through an ecosystem"
+          ],
+          "answerIndex": 1,
+          "explanation": "Homeostasis keeps internal conditions (temperature, pH, blood sugar, etc.) within a narrow range compatible with life. Your body sweating when hot and shivering when cold are homeostatic responses."
+        },
+        {
+          "id": "ch1-q-020",
+          "section": "ch1-s2",
+          "difficulty": "easy",
+          "question": "Metabolism refers to:",
+          "choices": [
+            "Only the reactions that break down molecules for energy",
+            "The movement of materials across cell membranes",
+            "All chemical reactions occurring within an organism",
+            "How genetic information is passed to offspring"
+          ],
+          "answerIndex": 2,
+          "explanation": "Metabolism encompasses ALL chemical reactions in an organism — both catabolism (breakdown) and anabolism (synthesis). Every living thing must maintain metabolism to sustain life."
+        },
+        {
+          "id": "ch1-q-021",
+          "section": "ch1-s2",
+          "difficulty": "medium",
+          "question": "In a well-designed experiment, which variable is deliberately changed by the researcher?",
+          "choices": [
+            "Dependent variable",
+            "Controlled variable",
+            "Independent variable",
+            "Confounding variable"
+          ],
+          "answerIndex": 2,
+          "explanation": "The independent variable is what the researcher manipulates. The dependent variable is what is measured in response. Controlled variables are kept constant to ensure the independent variable is the only thing changing."
+        },
+        {
+          "id": "ch1-q-022",
+          "section": "ch1-s1",
+          "difficulty": "easy",
+          "question": "A bacterium divides in two by binary fission. Which characteristic of life does this BEST represent?",
+          "choices": [
+            "Homeostasis",
+            "Metabolism",
+            "Evolution",
+            "Reproduction"
+          ],
+          "answerIndex": 3,
+          "explanation": "Reproduction — the ability to produce offspring — is one of the universal characteristics of life. Binary fission in bacteria is asexual reproduction. Without reproduction, a lineage goes extinct."
+        },
+        {
+          "id": "ch1-q-023",
+          "section": "ch1-s1",
+          "difficulty": "medium",
+          "question": "Two organisms are MOST closely related when they share:",
+          "choices": [
+            "The same geographic location",
+            "The same body size and shape",
+            "The most similar DNA sequences",
+            "The same habitat type"
+          ],
+          "answerIndex": 2,
+          "explanation": "DNA sequence similarity is the most reliable measure of evolutionary relatedness. Organisms that share a recent common ancestor have accumulated fewer differences in their DNA than distantly related organisms."
+        },
+        {
+          "id": "ch1-q-024",
+          "section": "ch1-s1",
+          "difficulty": "easy",
+          "question": "Which of these is NOT one of the three domains of life?",
+          "choices": [
+            "Bacteria",
+            "Archaea",
+            "Eukarya",
+            "Protista"
+          ],
+          "answerIndex": 3,
+          "explanation": "The three-domain system is Bacteria, Archaea, and Eukarya. Protista is a kingdom within Eukarya — it is not a domain. Fungi, Plantae, and Animalia are also kingdoms within Eukarya."
+        },
+        {
+          "id": "ch1-q-025",
+          "section": "ch1-s2",
+          "difficulty": "medium",
+          "question": "A scientist hypothesizes that fertilizer increases plant height. She grows 50 plants WITH fertilizer and 50 WITHOUT. Plant height is the _____ variable.",
+          "choices": [
+            "Independent variable — it is deliberately manipulated",
+            "Dependent variable — it is measured in response to the manipulation",
+            "Controlled variable — it is held constant throughout",
+            "Confounding variable — it is unrelated to the experiment"
+          ],
+          "answerIndex": 1,
+          "explanation": "Plant height is what is measured (the outcome), so it is the dependent variable. Fertilizer presence/absence is the independent variable. Things like water, soil type, and light would be controlled variables."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "The Chemistry of Life",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Atoms Make Up All Matter"
+        },
+        {
+          "id": "2.2",
+          "title": "Chemical Bonds Link Atoms"
+        },
+        {
+          "id": "2.3",
+          "title": "Water Is Essential to Life"
+        },
+        {
+          "id": "2.4",
+          "title": "pH, Acids, Bases, and Buffers"
+        },
+        {
+          "id": "2.5",
+          "title": "Four Major Organic Molecules"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch2-fc-001",
+          "section": "2.1",
+          "front": "What four elements make up ~96% of the human body (CHON)?",
+          "back": "Carbon (C), Hydrogen (H), Oxygen (O), Nitrogen (N).",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-002",
+          "section": "2.1",
+          "front": "Charge, mass, and location of protons, neutrons, and electrons.",
+          "back": "Proton: +, mass 1, in nucleus. Neutron: neutral, mass 1, in nucleus. Electron: −, ~0 mass, in electron cloud around nucleus.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-003",
+          "section": "2.1",
+          "front": "What defines an element's identity, and what are isotopes?",
+          "back": "Atomic number (number of protons) defines the element. Isotopes are atoms of the same element with different numbers of neutrons (same protons, different mass number).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-004",
+          "section": "2.2",
+          "front": "What makes an atom chemically stable, and what drives bonding?",
+          "back": "A full valence (outermost) shell makes an atom stable. Atoms with partially filled valence shells bond to fill vacancies.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-005",
+          "section": "2.2",
+          "front": "Why does carbon form four bonds?",
+          "back": "Carbon has 4 valence electrons and 4 vacancies in its outer shell, so it forms 4 covalent bonds — enabling chains, branches, and rings.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-006",
+          "section": "2.2",
+          "front": "Ionic vs. polar covalent vs. nonpolar covalent bond.",
+          "back": "Ionic: electron transferred (large electronegativity difference). Polar covalent: shared unequally (moderate difference). Nonpolar covalent: shared equally (small/no difference).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-007",
+          "section": "2.2",
+          "front": "Approximate electronegativity-difference cutoffs for bond type.",
+          "back": "< 0.4 = nonpolar covalent; 0.4–1.7 = polar covalent; > 1.7 = ionic. (Confirm whether your professor requires exact numbers.)",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-008",
+          "section": "2.2",
+          "front": "What is a hydrogen bond?",
+          "back": "A weak attraction between a partially positive H (δ+) and a nearby partially negative atom (δ−, usually O or N). Weak individually but collectively strong; stabilizes water, DNA, and protein shapes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-009",
+          "section": "2.3",
+          "front": "Why is water polar, and why does it matter?",
+          "back": "Oxygen is more electronegative than hydrogen, so it pulls shared electrons closer, giving O a δ− charge and each H a δ+ charge. This polarity underlies water's solvent ability, cohesion, and temperature regulation.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-010",
+          "section": "2.3",
+          "front": "Cohesion vs. adhesion.",
+          "back": "Cohesion: water molecules sticking to each other (surface tension). Adhesion: water sticking to other polar surfaces (water climbing in a paper towel or plant stem).",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-011",
+          "section": "2.4",
+          "front": "What does each unit on the pH scale represent?",
+          "back": "A 10-fold change in H+ concentration. pH 3 is 10× more acidic than pH 4 and 1000× more acidic than pH 6. The scale is logarithmic.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-012",
+          "section": "2.4",
+          "front": "What does a buffer do and why is it needed?",
+          "back": "A buffer resists pH change by absorbing excess H+ when acid is added and releasing H+ when base is added. Needed because enzymes/proteins denature outside narrow pH ranges (blood must stay 7.35–7.45).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-013",
+          "section": "2.5",
+          "front": "Dehydration synthesis vs. hydrolysis.",
+          "back": "Dehydration synthesis bonds monomers by REMOVING water (builds polymers). Hydrolysis breaks polymers by ADDING water (e.g., digestion).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-014",
+          "section": "2.5",
+          "front": "Four classes of organic molecules and their monomers.",
+          "back": "Carbohydrates (monosaccharides), proteins (amino acids), nucleic acids (nucleotides), lipids (not true polymers — diverse, hydrophobic).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-015",
+          "section": "2.5",
+          "front": "Four things bonded to an amino acid's central carbon; which one varies?",
+          "back": "Hydrogen, amino group (–NH2), carboxyl group (–COOH), and an R group (side chain). The R group varies among the 20 amino acids.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-016",
+          "section": "2.5",
+          "front": "Four levels of protein structure.",
+          "back": "Primary (amino acid sequence) → Secondary (alpha helices/beta sheets via H-bonds) → Tertiary (overall 3D shape of one polypeptide) → Quaternary (multiple polypeptides combined, e.g., hemoglobin).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-017",
+          "section": "2.5",
+          "front": "DNA vs. RNA: strands and bases.",
+          "back": "DNA: double-stranded, bases A/C/G/T. RNA: usually single-stranded, bases A/C/G/U (uracil replaces thymine). DNA pairing: A-T, C-G, held by hydrogen bonds.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-fc-018",
+          "section": "2.5",
+          "front": "Saturated vs. unsaturated fat — structure and consequence.",
+          "back": "Saturated: only single C-C bonds, straight chains, pack tightly, solid at room temp (butter). Unsaturated: ≥one double bond creates a kink, can't pack tightly, liquid at room temp (oil).",
+          "difficulty": "medium",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch2-q-001",
+          "section": "2.1",
+          "question": "An atom has 6 protons and 8 neutrons. What is it?",
+          "choices": [
+            "Oxygen-14",
+            "Carbon-14 (an isotope of carbon)",
+            "Nitrogen-14",
+            "Carbon-12"
+          ],
+          "answerIndex": 1,
+          "explanation": "6 protons = carbon. Mass number = 6 + 8 = 14, so carbon-14, a heavier isotope of carbon.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-002",
+          "section": "2.2",
+          "question": "Sodium (electronegativity 0.9) bonds with chlorine (3.0). What bond forms?",
+          "choices": [
+            "Nonpolar covalent",
+            "Polar covalent",
+            "Ionic",
+            "Hydrogen"
+          ],
+          "answerIndex": 2,
+          "explanation": "Difference = 2.1 (> 1.7), so chlorine strips sodium's electron, forming Na+ and Cl− held by an ionic bond.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-003",
+          "section": "2.3",
+          "question": "Why does salt dissolve in water but oil does not?",
+          "choices": [
+            "Oil is denser than salt",
+            "Water's partial charges pull apart ionic salt, but nonpolar oil has no charges for water to grab",
+            "Salt is nonpolar",
+            "Oil is ionic"
+          ],
+          "answerIndex": 1,
+          "explanation": "Polar water separates and surrounds the ions of salt. Nonpolar oil has no partial charges, so water excludes it (like dissolves like).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-004",
+          "section": "2.4",
+          "question": "A solution at pH 3 is how many times more acidic than one at pH 6?",
+          "choices": [
+            "3×",
+            "30×",
+            "100×",
+            "1000×"
+          ],
+          "answerIndex": 3,
+          "explanation": "Each unit is a 10-fold change. 3 units = 10 × 10 × 10 = 1000× more acidic.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-005",
+          "section": "2.5",
+          "question": "Which reaction does your stomach use to break down food?",
+          "choices": [
+            "Dehydration synthesis",
+            "Hydrolysis",
+            "Photosynthesis",
+            "Condensation"
+          ],
+          "answerIndex": 1,
+          "explanation": "Digestion breaks polymers into monomers by adding water across the bonds — hydrolysis.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-q-006",
+          "section": "2.5",
+          "question": "What primarily holds the two strands of a DNA double helix together?",
+          "choices": [
+            "Ionic bonds between sugars",
+            "Hydrogen bonds between complementary bases (A-T, C-G)",
+            "Covalent bonds between phosphates",
+            "Peptide bonds"
+          ],
+          "answerIndex": 1,
+          "explanation": "Complementary bases pair via hydrogen bonds: A with T, C with G.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-007",
+          "section": "2.5",
+          "question": "Why is butter solid at room temperature while olive oil is liquid?",
+          "choices": [
+            "Butter has more double bonds",
+            "Butter's saturated straight chains pack tightly; oil's unsaturated kinked chains cannot",
+            "Oil is saturated",
+            "Butter is unsaturated"
+          ],
+          "answerIndex": 1,
+          "explanation": "Saturated fats (butter) have straight chains that stack tightly into a solid. Unsaturated fats (oil) have kinks that prevent tight packing.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-008",
+          "section": "2.5",
+          "question": "Which level of protein structure is the amino acid sequence?",
+          "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+          ],
+          "answerIndex": 0,
+          "explanation": "Primary structure is the sequence of amino acids; it determines all higher levels.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-q-009",
+          "section": "2.3",
+          "question": "Why does water resist temperature change — what gives it a high specific heat?",
+          "choices": [
+            "Water molecules are unusually large and dense",
+            "Hydrogen bonds between water molecules must be broken to raise temperature, absorbing large amounts of energy",
+            "Water is a nonpolar solvent",
+            "Water has a low boiling point relative to its molecular weight"
+          ],
+          "answerIndex": 1,
+          "explanation": "To increase water's temperature, hydrogen bonds between molecules must be disrupted before kinetic energy increases. This requires a large energy input, buffering temperature changes in cells and ecosystems.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-010",
+          "section": "2.5",
+          "question": "Which polysaccharide is the primary long-term energy storage molecule in animal cells?",
+          "choices": [
+            "Starch",
+            "Glycogen",
+            "Cellulose",
+            "Chitin"
+          ],
+          "answerIndex": 1,
+          "explanation": "Glycogen is a highly branched polysaccharide stored in animal liver and muscle. Starch is the plant energy-storage equivalent. Cellulose is structural in plant cell walls; chitin is structural in fungal cell walls and arthropod exoskeletons.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-011",
+          "section": "2.5",
+          "question": "A nucleotide — the monomer of DNA and RNA — consists of which three components?",
+          "choices": [
+            "Amino acid + phosphate + ribose",
+            "Nitrogenous base + 5-carbon sugar + phosphate group",
+            "Glycerol + fatty acid + nitrogenous base",
+            "Monosaccharide + peptide bond + phosphate"
+          ],
+          "answerIndex": 1,
+          "explanation": "Every nucleotide contains: a nitrogenous base (A, T, G, C in DNA; U replaces T in RNA), a pentose sugar (deoxyribose in DNA; ribose in RNA), and one or more phosphate groups.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch2-q-012",
+          "section": "2.5",
+          "question": "Which bond joins amino acids together in a polypeptide chain?",
+          "choices": [
+            "Hydrogen bond",
+            "Ionic bond",
+            "Peptide bond",
+            "Disulfide bond"
+          ],
+          "answerIndex": 2,
+          "explanation": "Dehydration synthesis between the -COOH of one amino acid and the -NH2 of the next forms a peptide bond, releasing water. This defines the primary structure. Disulfide bonds stabilize 3D shape but do not link the backbone.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch2-q-013",
+          "section": "2.4",
+          "question": "Blood pH drops from 7.4 to 7.1 during acidosis. What happened to hydrogen ion concentration [H+]?",
+          "choices": [
+            "[H+] decreased — blood became less acidic",
+            "[H+] increased — blood became more acidic",
+            "[H+] stayed the same; only OH- changed",
+            "[H+] changed by exactly 0.3 units"
+          ],
+          "answerIndex": 1,
+          "explanation": "pH is the negative log of [H+], so lower pH = higher [H+]. Each unit is a 10-fold change; a drop of 0.3 units nearly doubles [H+]. This acidosis disrupts enzyme function throughout the body and is life-threatening.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch2-q-014",
+          "section": "ch2-s1",
+          "difficulty": "easy",
+          "question": "Why are noble gases (helium, neon, argon) chemically unreactive?",
+          "choices": [
+            "They have no protons in their nucleus",
+            "Their outermost electron shell is completely full, so they do not need to gain, lose, or share electrons",
+            "They are too large to form bonds with other elements",
+            "They exist only as gases and cannot interact with solids"
+          ],
+          "answerIndex": 1,
+          "explanation": "Atoms react to complete their valence shell (8 electrons for most, 2 for helium). Noble gases already have full valence shells and are therefore chemically stable and do not form bonds under normal conditions."
+        },
+        {
+          "id": "ch2-q-015",
+          "section": "ch2-s1",
+          "difficulty": "easy",
+          "question": "Why is carbon considered the backbone of all organic molecules?",
+          "choices": [
+            "Carbon is the most abundant element in the universe",
+            "Carbon has 4 valence electrons, allowing it to form 4 covalent bonds and create chains, rings, and branches",
+            "Carbon's bonds are stronger than those of any other element",
+            "Carbon is the lightest element capable of forming long chains"
+          ],
+          "answerIndex": 1,
+          "explanation": "Carbon's 4 valence electrons let it bond to 4 other atoms simultaneously, including other carbons, enabling the vast structural diversity of organic molecules — straight chains, branched chains, rings, and combinations."
+        },
+        {
+          "id": "ch2-q-016",
+          "section": "ch2-s2",
+          "difficulty": "medium",
+          "question": "Ice floats on liquid water. What causes this unusual property and why is it biologically important?",
+          "choices": [
+            "Ice is denser than liquid water, causing denser water to sink beneath it",
+            "As water freezes, hydrogen bonds form a regular lattice that is LESS dense than liquid water — so ice floats, insulating liquid water beneath, allowing aquatic organisms to survive winter",
+            "Freezing releases electrons that make ice lighter",
+            "Ice floats because water is an ionic compound"
+          ],
+          "answerIndex": 1,
+          "explanation": "In ice, hydrogen bonds organize water into an open crystalline lattice with greater spacing than liquid water. This makes ice less dense (~0.917 g/cm³ vs 1.0 g/cm³), so it floats. This insulating ice layer lets aquatic life survive in the liquid water below in winter."
+        },
+        {
+          "id": "ch2-q-017",
+          "section": "ch2-s2",
+          "difficulty": "medium",
+          "question": "Water's surface tension (which allows insects to walk on water) results from:",
+          "choices": [
+            "Water's low density compared to most solids",
+            "Cohesion — hydrogen bonds between water molecules pull surface molecules inward and sideways, resisting disruption",
+            "Adhesion of water to the insect's hydrophobic legs",
+            "Water's high specific heat capacity"
+          ],
+          "answerIndex": 1,
+          "explanation": "Cohesion is the attraction of water molecules to each other via hydrogen bonds. Surface water molecules are pulled inward and to the sides (not upward), creating tension. This is distinct from adhesion (water sticking to other surfaces)."
+        },
+        {
+          "id": "ch2-q-018",
+          "section": "ch2-s3",
+          "difficulty": "easy",
+          "question": "Which polysaccharide provides structural support in plant cell walls and cannot be digested by humans?",
+          "choices": [
+            "Starch",
+            "Glycogen",
+            "Cellulose",
+            "Chitin"
+          ],
+          "answerIndex": 2,
+          "explanation": "Cellulose is made of beta-glucose linked so the chains can hydrogen-bond with neighbors, forming strong microfibrils. Humans lack the enzyme (cellulase) to break these beta linkages, so cellulose passes as dietary fiber. Starch (alpha linkages) IS digestible."
+        },
+        {
+          "id": "ch2-q-019",
+          "section": "ch2-s3",
+          "difficulty": "medium",
+          "question": "A triglyceride is formed by:",
+          "choices": [
+            "Three glycerol molecules bonded to one fatty acid",
+            "One glycerol molecule bonded to three fatty acids via ester linkages by dehydration synthesis",
+            "Two fatty acids bonded to a phosphate and glycerol head",
+            "Amino acids linked by peptide bonds"
+          ],
+          "answerIndex": 1,
+          "explanation": "Triglycerides = one glycerol + three fatty acids. Each fatty acid attaches to glycerol by an ester bond formed by dehydration synthesis (loss of water). Saturated triglycerides are solid fats; unsaturated ones are liquid oils."
+        },
+        {
+          "id": "ch2-q-020",
+          "section": "ch2-s4",
+          "difficulty": "medium",
+          "question": "Protein denaturation means:",
+          "choices": [
+            "The protein gains energy and becomes hyperactive",
+            "The amino acid sequence (primary structure) is destroyed by breaking peptide bonds",
+            "The protein loses its 3D shape due to disruption of hydrogen bonds, ionic bonds, and other weak interactions — while the amino acid sequence remains intact",
+            "The protein is completely hydrolyzed into free amino acids"
+          ],
+          "answerIndex": 2,
+          "explanation": "Denaturation unfolds a protein's secondary and tertiary structure by disrupting the weak bonds that maintain shape. The primary structure (amino acid sequence, held by peptide bonds) is NOT broken. Denatured proteins lose function — like cooked egg white turning solid."
+        },
+        {
+          "id": "ch2-q-021",
+          "section": "ch2-s4",
+          "difficulty": "easy",
+          "question": "Hemoglobin (the oxygen-carrying protein in red blood cells) is made of 4 polypeptide subunits. This represents which level of protein structure?",
+          "choices": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Quaternary"
+          ],
+          "answerIndex": 3,
+          "explanation": "Quaternary structure describes proteins built from multiple polypeptide chains (subunits). Hemoglobin has 4 subunits (2 alpha + 2 beta). Not all proteins have quaternary structure — myoglobin is single-chain (no quaternary)."
+        },
+        {
+          "id": "ch2-q-022",
+          "section": "ch2-s5",
+          "difficulty": "easy",
+          "question": "Which nitrogenous base is found in RNA but NOT in DNA?",
+          "choices": [
+            "Adenine",
+            "Cytosine",
+            "Uracil",
+            "Guanine"
+          ],
+          "answerIndex": 2,
+          "explanation": "RNA uses uracil (U) instead of thymine (T). Uracil pairs with adenine just as thymine does. Thymine has a methyl group that uracil lacks. This difference is one of several structural distinctions between DNA and RNA."
+        },
+        {
+          "id": "ch2-q-023",
+          "section": "ch2-s5",
+          "difficulty": "medium",
+          "question": "In DNA, the two strands of the double helix are held together by:",
+          "choices": [
+            "Covalent bonds between complementary bases",
+            "Hydrogen bonds between complementary base pairs (A–T and G–C)",
+            "Ionic bonds between the phosphate backbones",
+            "Peptide bonds between nucleotides"
+          ],
+          "answerIndex": 1,
+          "explanation": "The double helix is held together by hydrogen bonds between complementary bases: A–T (2 H-bonds) and G–C (3 H-bonds). The sugar-phosphate backbone is held by covalent bonds. Because H-bonds are weak, the two strands can be separated (unzipped) during replication and transcription."
+        },
+        {
+          "id": "ch2-q-024",
+          "section": "ch2-s1",
+          "difficulty": "medium",
+          "question": "Why does oil not dissolve in water ('like dissolves like')?",
+          "choices": [
+            "Oil molecules are too large to enter water",
+            "Polar water molecules interact strongly with each other and with other polar/ionic solutes but cannot interact with nonpolar oil molecules, which have no partial charges",
+            "Oil is denser than water",
+            "Water's hydrogen bonds repel all hydrocarbons"
+          ],
+          "answerIndex": 1,
+          "explanation": "Water dissolves polar and ionic substances because its partial charges attract and surround them. Nonpolar molecules (oils, fats) have no partial charges, so water cannot interact with them. Instead, water molecules form a cage around them (hydrophobic effect), pushing oil droplets together."
+        },
+        {
+          "id": "ch2-q-025",
+          "section": "ch2-s3",
+          "difficulty": "easy",
+          "question": "Which pair correctly matches the monomer to its polymer?",
+          "choices": [
+            "Amino acid → nucleic acid",
+            "Fatty acid → polysaccharide",
+            "Monosaccharide → polysaccharide",
+            "Nucleotide → polypeptide"
+          ],
+          "answerIndex": 2,
+          "explanation": "Monosaccharides (like glucose) are the monomers of polysaccharides (like starch, glycogen, cellulose). Amino acids → proteins/polypeptides; nucleotides → nucleic acids (DNA/RNA); fatty acids + glycerol → triglycerides."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Cells",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Cells Are the Units of Life"
+        },
+        {
+          "id": "3.2",
+          "title": "Different Cell Types / Three Domains"
+        },
+        {
+          "id": "3.3",
+          "title": "A Membrane Separates Each Cell"
+        },
+        {
+          "id": "3.4",
+          "title": "Eukaryotic Organelles Divide Labor"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch3-fc-001",
+          "section": "3.1",
+          "front": "Three original components of the cell theory.",
+          "back": "1) All organisms are made of one or more cells. 2) The cell is the fundamental unit of life. 3) All cells come from preexisting cells (added by Virchow).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-002",
+          "section": "3.1",
+          "front": "Four features common to ALL cells.",
+          "back": "DNA, ribosomes, cytoplasm (with cytosol), and a cell (plasma) membrane. Note: a nucleus is NOT universal.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-003",
+          "section": "3.1",
+          "front": "TEM vs. SEM.",
+          "back": "TEM sends electrons THROUGH a thin slice → 2D internal view (highest magnification). SEM scans the SURFACE → 3D external texture (lower resolution). Memory: T=Through, S=Surface.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-004",
+          "section": "3.1",
+          "front": "Why must cells stay small (surface-area-to-volume)?",
+          "back": "As a cell grows, volume increases faster than surface area, so a large cell has too little surface to exchange materials for its interior. Small size keeps SA:V high. Cube SA = 6 × side²; volume = side³.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-005",
+          "section": "3.2",
+          "front": "Defining difference between prokaryotic and eukaryotic cells.",
+          "back": "Eukaryotes have a membrane-bound nucleus and membrane-bound organelles; prokaryotes have neither. Eukaryotic cells are also 10–100× larger.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-006",
+          "section": "3.2",
+          "front": "Nucleoid vs. nucleus.",
+          "back": "Nucleoid (prokaryotes): region where circular DNA sits, NOT membrane-bound. Nucleus (eukaryotes): DNA enclosed by a double membrane (nuclear envelope).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-007",
+          "section": "3.2",
+          "front": "How do many antibiotics (e.g., penicillin) kill bacteria selectively?",
+          "back": "They block construction of the bacterial cell wall, causing the cell to burst. Human cells lack cell walls, so they are unharmed — selective toxicity.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-008",
+          "section": "3.2",
+          "front": "Three structures in plant cells but not animal cells.",
+          "back": "Cell wall, chloroplasts, and a large central vacuole.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-009",
+          "section": "3.3",
+          "front": "How does a phospholipid differ from a triglyceride?",
+          "back": "A triglyceride has glycerol + 3 fatty acids. A phospholipid has glycerol + 2 fatty acids + a phosphate group, making it amphipathic (hydrophilic head, hydrophobic tails).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-010",
+          "section": "3.3",
+          "front": "Why do phospholipids form a bilayer in water?",
+          "back": "They are amphipathic: hydrophilic heads face the water (outside and inside the cell) and hydrophobic tails turn inward away from water, self-assembling into a double layer.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-011",
+          "section": "3.3",
+          "front": "What is selective permeability of the membrane?",
+          "back": "The hydrophobic core lets lipids and small nonpolar molecules (O2, CO2) pass freely but blocks ions and polar molecules (e.g., glucose), which need transport proteins.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-012",
+          "section": "3.3",
+          "front": "Name the five types of membrane proteins.",
+          "back": "Transport, enzymes, recognition (immune 'name tags'), adhesion, and receptor (signal transduction) proteins.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-013",
+          "section": "3.3",
+          "front": "What is the fluid mosaic model? Role of cholesterol?",
+          "back": "The membrane is a fluid (molecules drift laterally) mosaic (mixed proteins, lipids, steroids, carbohydrates). Cholesterol/steroids buffer fluidity as temperature changes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-014",
+          "section": "3.4",
+          "front": "Secretory pathway order for a protein exported from a cell.",
+          "back": "Nucleus (gene → mRNA) → rough ER (ribosomes make protein) → transport vesicle → Golgi (process/package) → vesicle → cell membrane (secretion).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-015",
+          "section": "3.4",
+          "front": "Rough ER vs. smooth ER.",
+          "back": "Rough ER: ribosome-studded; makes proteins for secretion/membranes. Smooth ER: makes lipids, detoxifies drugs/poisons, and (in muscle) stores calcium for contraction.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-016",
+          "section": "3.4",
+          "front": "Function of the Golgi apparatus.",
+          "back": "Receives ER products; folds, modifies, attaches carbohydrates ('name tags'), then sorts and packages materials into vesicles for shipping to the membrane or lysosomes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-fc-017",
+          "section": "3.4",
+          "front": "Free vs. membrane-bound ribosomes — destination of their proteins.",
+          "back": "Free ribosomes (cytosol) make proteins used in the cytosol. Membrane-bound ribosomes (on rough ER) make proteins for organelles, the membrane, or secretion.",
+          "difficulty": "medium",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch3-q-001",
+          "section": "3.1",
+          "question": "Which scientist added 'all cells come from preexisting cells' to the cell theory?",
+          "choices": [
+            "Robert Hooke",
+            "Antony van Leeuwenhoek",
+            "Rudolf Virchow",
+            "Louis Pasteur"
+          ],
+          "answerIndex": 2,
+          "explanation": "Virchow added the third component in 1855, contradicting spontaneous generation.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-002",
+          "section": "3.1",
+          "question": "You need to view the 3D surface texture of a virus. Which microscope?",
+          "choices": [
+            "Compound light microscope",
+            "Confocal microscope",
+            "TEM",
+            "SEM"
+          ],
+          "answerIndex": 3,
+          "explanation": "SEM scans the surface to reveal 3D external texture; TEM gives 2D internal views.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch3-q-003",
+          "section": "3.1",
+          "question": "For a cube 4 cm on each side, what is the surface-area-to-volume ratio?",
+          "choices": [
+            "1.5",
+            "1.125",
+            "2.0",
+            "0.89"
+          ],
+          "answerIndex": 0,
+          "explanation": "SA = 6 × 4² = 6 × 16 = 96 cm². Volume = 4³ = 64 cm³. Ratio = 96 / 64 = 1.5.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch3-q-004",
+          "section": "3.1",
+          "question": "Which statement is FALSE?",
+          "choices": [
+            "All cells have DNA",
+            "All cells have ribosomes",
+            "All cells have a nucleus",
+            "All cells have a cell membrane"
+          ],
+          "answerIndex": 2,
+          "explanation": "Prokaryotic cells lack a nucleus. The other three features are universal.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch3-q-005",
+          "section": "3.2",
+          "question": "Penicillin kills bacteria without harming human cells because:",
+          "choices": [
+            "Human cells are too large",
+            "Human cells lack the bacterial cell wall the drug targets",
+            "Bacteria lack DNA",
+            "Human cells have thicker membranes"
+          ],
+          "answerIndex": 1,
+          "explanation": "Penicillin blocks cell-wall construction; human cells have no cell wall, so they're unaffected (selective toxicity).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-006",
+          "section": "3.3",
+          "question": "Why can oxygen cross the membrane freely while glucose cannot?",
+          "choices": [
+            "Oxygen is larger",
+            "Oxygen is nonpolar and crosses the hydrophobic core; glucose is polar and is blocked",
+            "Glucose is nonpolar",
+            "Oxygen uses a transport protein"
+          ],
+          "answerIndex": 1,
+          "explanation": "The hydrophobic core admits small nonpolar molecules (O2) but blocks polar molecules (glucose), which need transport proteins.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-007",
+          "section": "3.3",
+          "question": "Which membrane protein is responsible for transplant rejection?",
+          "choices": [
+            "Transport protein",
+            "Enzyme",
+            "Recognition protein",
+            "Adhesion protein"
+          ],
+          "answerIndex": 2,
+          "explanation": "Recognition proteins act as immune 'name tags'; unfamiliar markers on donor tissue trigger an immune attack.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-008",
+          "section": "3.4",
+          "question": "Which organelle detoxifies drugs and, in muscle cells, stores calcium?",
+          "choices": [
+            "Rough ER",
+            "Smooth ER",
+            "Golgi apparatus",
+            "Nucleolus"
+          ],
+          "answerIndex": 1,
+          "explanation": "Smooth ER synthesizes lipids, detoxifies drugs/poisons, and stores/releases calcium in muscle cells.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-009",
+          "section": "3.4",
+          "question": "Put the secretory pathway in order: (1) Golgi (2) nucleus (3) rough ER (4) cell membrane.",
+          "choices": [
+            "2 → 3 → 1 → 4",
+            "3 → 2 → 1 → 4",
+            "2 → 1 → 3 → 4",
+            "1 → 2 → 3 → 4"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nucleus (mRNA) → rough ER (protein synthesis) → Golgi (processing/packaging) → cell membrane (secretion).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-010",
+          "section": "3.4",
+          "question": "Mitochondria have their own circular DNA and divide by binary fission inside the cell. This evidence best supports:",
+          "choices": [
+            "The fluid mosaic model of the plasma membrane",
+            "The endosymbiotic theory — mitochondria descended from engulfed prokaryotes",
+            "The third principle of cell theory (cells come from cells)",
+            "The lock-and-key model of enzyme specificity"
+          ],
+          "answerIndex": 1,
+          "explanation": "The endosymbiotic theory (Lynn Margulis) proposes mitochondria and chloroplasts were once free-living bacteria engulfed by a larger host cell. Evidence: circular DNA, double membrane, 70S ribosomes like bacteria, and binary fission.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-011",
+          "section": "3.4",
+          "question": "If lysosomal hydrolytic enzymes leaked out of their vesicles into the cytoplasm, the most likely outcome would be:",
+          "choices": [
+            "Faster cell growth from additional nutrients",
+            "Increased ATP production",
+            "Digestion of the cell's own proteins and organelles, leading to cell death",
+            "Immediate export of the enzymes by exocytosis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Lysosomes contain hydrolytic enzymes optimized for low pH. Released into the neutral cytoplasm they would begin digesting the cell's own macromolecules and organelles — a basis of certain cell-death and disease pathways.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-012",
+          "section": "3.4",
+          "question": "Which cytoskeletal component forms the mitotic spindle that separates chromosomes during cell division?",
+          "choices": [
+            "Microfilaments (actin)",
+            "Intermediate filaments",
+            "Microtubules (tubulin polymers)",
+            "The nuclear lamina"
+          ],
+          "answerIndex": 2,
+          "explanation": "Microtubules polymerize from tubulin subunits and form the spindle apparatus. They attach to chromosomes at kinetochores and shorten during anaphase to pull sister chromatids to opposite poles.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-013",
+          "section": "3.3",
+          "question": "A plant cell placed in a hypertonic solution will:",
+          "choices": [
+            "Gain water and become turgid",
+            "Lose water; the membrane shrinks away from the cell wall (plasmolysis)",
+            "Stay the same — the cell wall prevents any water movement",
+            "Burst due to osmotic pressure"
+          ],
+          "answerIndex": 1,
+          "explanation": "In a hypertonic solution, water exits the plant cell by osmosis. The cytoplasm and membrane shrink away from the rigid cell wall — plasmolysis. Unlike animal cells, plant cells do not burst in hypotonic solutions because the wall resists expansion.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch3-q-014",
+          "section": "3.2",
+          "question": "Which three structures are found in plant cells but NOT in typical animal cells?",
+          "choices": [
+            "Nucleus, mitochondria, and ribosomes",
+            "Plasma membrane, cytoplasm, and Golgi",
+            "Cell wall, chloroplasts, and large central vacuole",
+            "Cytoskeleton, ER, and lysosomes"
+          ],
+          "answerIndex": 2,
+          "explanation": "Plant cells uniquely possess: a cellulose cell wall (rigid support), chloroplasts (photosynthesis), and a large central vacuole (water storage, turgor pressure, waste storage). Animal cells lack all three.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch3-q-015",
+          "section": "ch3-s2",
+          "difficulty": "easy",
+          "question": "What is the nucleolus and what does it do?",
+          "choices": [
+            "A membrane-bound organelle that stores DNA separately from the chromosomes",
+            "A region within the nucleus where ribosomal RNA (rRNA) is synthesized and ribosomal subunits are assembled before export to the cytoplasm",
+            "The outer boundary of the nucleus that regulates what enters and exits",
+            "A type of lysosome found in the nucleus"
+          ],
+          "answerIndex": 1,
+          "explanation": "The nucleolus (inside the nucleus but NOT membrane-bound) is a site of rRNA transcription and ribosome assembly. Cells with high protein synthesis demands — like secretory cells — have especially large, prominent nucleoli."
+        },
+        {
+          "id": "ch3-q-016",
+          "section": "ch3-s2",
+          "difficulty": "easy",
+          "question": "The nuclear envelope is a _____ membrane with nuclear pores that:",
+          "choices": [
+            "Single-layered membrane; prevent all large molecules from leaving the nucleus",
+            "Double-layered membrane; control the passage of mRNA, proteins, and ribosomal subunits between the nucleus and cytoplasm",
+            "Triple-layered membrane; produce energy for nuclear functions",
+            "Single-layered membrane; replicate DNA before cell division"
+          ],
+          "answerIndex": 1,
+          "explanation": "The nuclear envelope consists of two lipid bilayers. Nuclear pores are protein complexes that regulate traffic: mRNA and ribosomal subunits exit; transcription factors and DNA-repair proteins enter. This separates transcription (nucleus) from translation (cytoplasm)."
+        },
+        {
+          "id": "ch3-q-017",
+          "section": "ch3-s3",
+          "difficulty": "medium",
+          "question": "Cristae are inner membrane folds of mitochondria. Their function is to:",
+          "choices": [
+            "Store mitochondrial DNA and ribosomes",
+            "Increase the inner membrane surface area, packing in more electron transport chain complexes and ATP synthase to maximize ATP production",
+            "Produce ribosomal RNA for mitochondrial protein synthesis",
+            "Store calcium ions for cell signaling"
+          ],
+          "answerIndex": 1,
+          "explanation": "Cristae amplify the inner membrane surface area dramatically. The more surface area, the more ETC complexes and ATP synthase can fit, boosting ATP output. Cells with high energy demands (muscle, liver) have denser cristae. The fluid inside (matrix) is where the Krebs cycle occurs."
+        },
+        {
+          "id": "ch3-q-018",
+          "section": "ch3-s3",
+          "difficulty": "medium",
+          "question": "What is the PRIMARY difference between cilia and flagella?",
+          "choices": [
+            "Cilia are made of actin filaments; flagella are made of microtubules",
+            "Cilia are short and numerous (move fluid past the cell); flagella are long and few (propel the cell through fluid)",
+            "Cilia are found only in prokaryotes; flagella are only in eukaryotes",
+            "They are structurally completely different but perform identical functions"
+          ],
+          "answerIndex": 1,
+          "explanation": "Both have a '9+2' microtubule axoneme. The difference is scale and number: cilia (short, many — respiratory tract moving mucus; Paramecium swimming) vs. flagella (long, 1–2 — sperm motility, Euglena). Some eukaryotic cilia are non-motile (primary cilia for signaling)."
+        },
+        {
+          "id": "ch3-q-019",
+          "section": "ch3-s3",
+          "difficulty": "medium",
+          "question": "Peroxisomes neutralize hydrogen peroxide (H₂O₂) produced during certain reactions. Why is H₂O₂ dangerous to cells?",
+          "choices": [
+            "It is needed for photosynthesis and must be kept away from mitochondria",
+            "H₂O₂ is a reactive oxygen species that oxidizes and damages DNA, proteins, and lipids — so peroxisomal catalase converts it to harmless water and O₂",
+            "H₂O₂ inhibits enzyme activity by raising the pH",
+            "H₂O₂ is too large to exit the cell, causing osmotic problems"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hydrogen peroxide is a reactive oxygen species (ROS) that can oxidize and damage biomolecules. Catalase in peroxisomes rapidly breaks it down: 2 H₂O₂ → 2 H₂O + O₂. Peroxisomes also oxidize fatty acids and detoxify alcohol in the liver."
+        },
+        {
+          "id": "ch3-q-020",
+          "section": "ch3-s2",
+          "difficulty": "medium",
+          "question": "Match the cell wall material to the correct organism group: Bacteria — Plants — Fungi",
+          "choices": [
+            "Cellulose — Peptidoglycan — Chitin",
+            "Peptidoglycan — Cellulose — Chitin",
+            "Chitin — Cellulose — Peptidoglycan",
+            "Peptidoglycan — Chitin — Cellulose"
+          ],
+          "answerIndex": 1,
+          "explanation": "Bacteria: peptidoglycan (penicillin targets its synthesis). Plants: cellulose (structural carbohydrate). Fungi: chitin (also in arthropod exoskeletons). These compositional differences are exploited by antibiotics and antifungals."
+        },
+        {
+          "id": "ch3-q-021",
+          "section": "ch3-s4",
+          "difficulty": "medium",
+          "question": "Both gap junctions (animals) and plasmodesmata (plants) allow:",
+          "choices": [
+            "Cells to prevent any communication with their neighbors for independence",
+            "Direct cytoplasmic connections so ions, small molecules, and signals can pass between adjacent cells without crossing plasma membranes",
+            "Large proteins to move freely between any cell in the body",
+            "Cell walls to form at the midpoint between daughter cells"
+          ],
+          "answerIndex": 1,
+          "explanation": "Gap junctions (animals) and plasmodesmata (plants) are intercellular channels that link adjacent cells' cytoplasm. This enables coordinated responses — e.g., cardiac muscle cells contract synchronously via gap junctions; plants propagate signals through plasmodesmata."
+        },
+        {
+          "id": "ch3-q-022",
+          "section": "ch3-s3",
+          "difficulty": "hard",
+          "question": "A drug destroys all microtubules in a dividing cell. Which process would be MOST directly and severely disrupted?",
+          "choices": [
+            "Protein synthesis on ribosomes",
+            "ATP production in mitochondria",
+            "Chromosome separation during mitosis (spindle fibers are microtubules)",
+            "Lipid synthesis in the smooth ER"
+          ],
+          "answerIndex": 2,
+          "explanation": "The mitotic spindle is built from microtubules that attach to and pull chromosomes apart. No spindle = chromosomes cannot separate = cell division fails. This is how taxol (paclitaxel) stops cancer cells — it stabilizes (hyperstabilizes) microtubules so the spindle cannot disassemble."
+        },
+        {
+          "id": "ch3-q-023",
+          "section": "ch3-s3",
+          "difficulty": "easy",
+          "question": "Rough ER is called 'rough' because:",
+          "choices": [
+            "Its membrane is irregularly shaped and jagged",
+            "Ribosomes are studded on its cytoplasmic surface, giving it a bumpy appearance under electron microscopy",
+            "It produces unfinished (rough) proteins that need polishing in the Golgi",
+            "Its lipid bilayer is thicker and rougher than that of smooth ER"
+          ],
+          "answerIndex": 1,
+          "explanation": "Ribosomes on the rough ER's cytoplasmic face synthesize proteins co-translationally into the ER lumen (secretory or membrane proteins). The ribosome-studded surface appears rough/bumpy under the electron microscope, in contrast to the smooth ER (no ribosomes)."
+        },
+        {
+          "id": "ch3-q-024",
+          "section": "ch3-s4",
+          "difficulty": "medium",
+          "question": "In the secretory pathway, what is the correct order from protein synthesis to secretion?",
+          "choices": [
+            "Golgi → rough ER → vesicle → plasma membrane",
+            "Rough ER → transport vesicle → Golgi → secretory vesicle → plasma membrane (exocytosis)",
+            "Smooth ER → rough ER → Golgi → lysosome",
+            "Nucleus → Golgi → rough ER → plasma membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "The endomembrane secretory pathway: rough ER (synthesis & initial folding) → transport vesicle → Golgi apparatus (processing, sorting, packaging) → secretory vesicle → plasma membrane fusion (exocytosis). The Golgi is the 'cellular post office,' directing cargo to the right destinations."
+        },
+        {
+          "id": "ch3-q-025",
+          "section": "ch3-s2",
+          "difficulty": "medium",
+          "question": "Eukaryotic cells can be much larger than prokaryotic cells mainly because:",
+          "choices": [
+            "They have a rigid cell wall that supports their larger size",
+            "Their membrane-bound organelles divide metabolic labor, allowing efficient function at larger scales without depending entirely on diffusion across the whole cytoplasm",
+            "They have more DNA and therefore need more space",
+            "They evolved later and the environment allowed larger sizes"
+          ],
+          "answerIndex": 1,
+          "explanation": "Organelle compartmentalization is key: mitochondria handle ATP, rough ER handles protein processing, lysosomes handle digestion, etc. This internal division of labor lets eukaryotes function efficiently at sizes where diffusion alone (as in prokaryotes) would be too slow."
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "title": "The Energy of Life",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "All Living Things Use Energy"
+        },
+        {
+          "id": "4.2",
+          "title": "ATP Is the Cell's Energy Currency"
+        },
+        {
+          "id": "4.3",
+          "title": "Enzymes Speed Reactions"
+        },
+        {
+          "id": "4.4",
+          "title": "Membrane Transport"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch4-fc-001",
+          "section": "4.1",
+          "front": "First Law of Thermodynamics",
+          "back": "Energy cannot be created or destroyed, only converted from one form to another. Cells cannot manufacture energy; they convert chemical energy in food into ATP, heat, and work.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-002",
+          "section": "4.1",
+          "front": "Second Law of Thermodynamics and entropy",
+          "back": "Every energy conversion increases entropy (disorder) in the universe. Cells must constantly import energy because each chemical reaction dissipates some energy as heat. Life maintains local order only by continuously using energy.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-003",
+          "section": "4.1",
+          "front": "Exergonic vs. endergonic reaction",
+          "back": "Exergonic: releases free energy (delta G < 0); products have less energy than reactants; spontaneous (e.g., respiration). Endergonic: requires energy input (delta G > 0); products have more energy (e.g., building glucose). Coupled reactions pair the two.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-004",
+          "section": "4.2",
+          "front": "ATP structure",
+          "back": "Adenosine triphosphate = adenine + ribose + 3 phosphate groups. The bond between the second and third phosphates stores potential energy. ATP is the universal energy currency of all cells.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-005",
+          "section": "4.2",
+          "front": "ATP hydrolysis reaction and energy yield",
+          "back": "ATP + H2O -> ADP + Pi + energy (~7.3 kcal/mol). Breaking the terminal phosphate bond releases free energy that drives cellular work: muscle contraction, active transport, biosynthesis. ADP is recharged back to ATP by cellular respiration.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-006",
+          "section": "4.2",
+          "front": "Substrate-level vs. oxidative phosphorylation",
+          "back": "Substrate-level phosphorylation: ATP made by directly transferring a phosphate from a substrate to ADP (e.g., in glycolysis and Krebs cycle). Oxidative phosphorylation: ATP made using energy from an electron transport chain + chemiosmosis (inner mitochondrial membrane).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-007",
+          "section": "4.3",
+          "front": "Activation energy and how enzymes lower it",
+          "back": "Activation energy (Ea) is the minimum energy required to start a reaction. Enzymes lower Ea by orienting substrates, stressing bonds, and providing a favorable microenvironment. They do NOT change the overall delta G of the reaction.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-008",
+          "section": "4.3",
+          "front": "Active site, substrate, and enzyme-substrate complex",
+          "back": "The active site is the specific region on an enzyme where substrate binds. Substrate + enzyme -> enzyme-substrate complex -> products released + enzyme recycled. Active-site shape is complementary to the substrate.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-009",
+          "section": "4.3",
+          "front": "Induced fit model",
+          "back": "When the substrate enters the active site, the enzyme changes shape slightly to grip the substrate more tightly. This induced fit differs from the rigid 'lock-and-key' model and better explains why enzymes are specific yet flexible.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-010",
+          "section": "4.3",
+          "front": "Temperature and pH effects on enzymes",
+          "back": "Each enzyme has an optimal temperature and pH. Too hot: denaturation (weak bonds break, protein unfolds, active site lost). Too cold: slower reaction rate. Wrong pH: denatures enzyme or disrupts substrate binding. Human body enzymes optimal near 37 degrees C and pH 7.4.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-011",
+          "section": "4.3",
+          "front": "Cofactors vs. coenzymes",
+          "back": "Cofactors: inorganic ions (Mg2+, Zn2+, Fe2+) that assist enzyme catalysis. Coenzymes: organic non-protein helpers (NAD+, FAD, coenzyme A; many derived from vitamins) that carry chemical groups or electrons between reactions. Both are required for enzyme function.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-012",
+          "section": "4.3",
+          "front": "Competitive inhibitor",
+          "back": "Structurally resembles the substrate; competes for the ACTIVE SITE. Reversible: increasing substrate concentration can displace the inhibitor. Example: statins compete with the normal substrate of HMG-CoA reductase, reducing cholesterol synthesis.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-013",
+          "section": "4.3",
+          "front": "Non-competitive (allosteric) inhibitor",
+          "back": "Binds the ALLOSTERIC SITE (not the active site), causing a conformational change that reduces enzyme activity. Cannot be overcome by adding more substrate. Allosteric regulation allows end-product feedback to shut off a metabolic pathway.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-014",
+          "section": "4.4",
+          "front": "Simple diffusion",
+          "back": "Net movement of a substance from HIGH to LOW concentration, driven by the concentration gradient. Passive — no ATP needed. Reaches equilibrium when concentrations equalize. Small, nonpolar molecules (O2, CO2) diffuse freely through the lipid bilayer.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-015",
+          "section": "4.4",
+          "front": "Osmosis",
+          "back": "Diffusion of WATER through a selectively permeable membrane from LOW solute (high water) to HIGH solute (low water) concentration. Passive. Continues until solute concentrations equalize or pressure builds to oppose it (osmotic pressure).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-016",
+          "section": "4.4",
+          "front": "Isotonic, hypotonic, hypertonic — effects on animal cells",
+          "back": "Isotonic: same solute outside as inside — no net water movement. Hypotonic: less solute outside — water enters, cell swells; may lyse (osmotic lysis). Hypertonic: more solute outside — water leaves, cell shrinks (crenation). IV fluids must be isotonic.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-017",
+          "section": "4.4",
+          "front": "Facilitated diffusion vs. active transport",
+          "back": "Facilitated diffusion: PASSIVE; channel or carrier proteins; HIGH to LOW concentration; no ATP (e.g., glucose via GLUT transporters). Active transport: requires ATP; pump proteins; moves AGAINST gradient LOW to HIGH (e.g., Na+/K+ pump).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-018",
+          "section": "4.4",
+          "front": "Sodium-potassium (Na+/K+) pump",
+          "back": "Active transport protein: pumps 3 Na+ OUT and 2 K+ IN per ATP hydrolyzed. Creates electrochemical gradients used for nerve impulses, muscle contraction, and secondary active transport. Net movement of positive charge out keeps cell interior negative.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-019",
+          "section": "4.4",
+          "front": "Endocytosis — phagocytosis, pinocytosis, receptor-mediated",
+          "back": "Endocytosis: cell engulfs extracellular material into a vesicle (uses energy). Phagocytosis ('cell eating'): ingests large particles/bacteria (macrophages). Pinocytosis ('cell drinking'): takes in fluid + dissolved solutes. Receptor-mediated: specific molecules bind surface receptors before engulfment.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-fc-020",
+          "section": "4.4",
+          "front": "Exocytosis",
+          "back": "Vesicles inside the cell fuse with the plasma membrane and release contents outside. Used to secrete hormones (insulin), neurotransmitters, digestive enzymes, and extracellular matrix proteins. The opposite of endocytosis.",
+          "difficulty": "easy",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch4-q-001",
+          "section": "4.1",
+          "question": "Which statement correctly describes the First Law of Thermodynamics?",
+          "choices": [
+            "Energy tends to become less organized over time",
+            "Energy cannot be created or destroyed, only converted from one form to another",
+            "Reactions that release energy are always faster",
+            "Living organisms can synthesize energy from matter"
+          ],
+          "answerIndex": 1,
+          "explanation": "The First Law states that total energy is conserved. Cells cannot create energy; they convert chemical energy in glucose into ATP, heat, and mechanical work.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-002",
+          "section": "4.1",
+          "question": "Which of the following is an ENDERGONIC (energy-requiring) reaction?",
+          "choices": [
+            "Cellular respiration breaking down glucose to CO2 and H2O",
+            "ATP hydrolysis releasing a phosphate group",
+            "Photosynthesis building glucose from CO2 and H2O",
+            "A burning match releasing heat and light"
+          ],
+          "answerIndex": 2,
+          "explanation": "Photosynthesis builds glucose (a high-energy molecule) from low-energy CO2 and H2O — that requires energy input, making it endergonic. The others are exergonic (energy-releasing).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-003",
+          "section": "4.2",
+          "question": "When a cell hydrolyzes ATP to ADP + Pi, what is directly used to power cellular work?",
+          "choices": [
+            "The phosphate ion alone",
+            "Free energy released from breaking the terminal phosphate bond",
+            "Adenosine, which enters the citric acid cycle",
+            "A proton gradient across the membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hydrolysis of ATP releases ~7.3 kcal/mol of free energy. This energy is harnessed by coupling ATP hydrolysis to endergonic processes such as active transport, muscle contraction, and biosynthesis.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-q-004",
+          "section": "4.3",
+          "question": "An enzyme speeds up a reaction primarily by:",
+          "choices": [
+            "Increasing the free energy of the products",
+            "Permanently changing the equilibrium of the reaction",
+            "Lowering the activation energy required to initiate the reaction",
+            "Increasing the concentration of substrate"
+          ],
+          "answerIndex": 2,
+          "explanation": "Enzymes lower the activation energy barrier, allowing reactions to reach equilibrium faster. They do NOT change delta G or the equilibrium constant — only the rate at which equilibrium is achieved.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-005",
+          "section": "4.3",
+          "question": "The induced fit model of enzyme action states that:",
+          "choices": [
+            "The active site is rigid and only perfectly shaped substrates can bind",
+            "The enzyme's active site changes shape slightly when substrate binds, improving catalysis",
+            "Substrates reshape themselves to fit the rigid active site",
+            "Enzymes are permanently changed after catalyzing one reaction"
+          ],
+          "answerIndex": 1,
+          "explanation": "In the induced fit model, substrate binding triggers a conformational change in the enzyme that improves the enzyme-substrate interaction and promotes catalysis. This replaced the older, rigid 'lock-and-key' model.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-006",
+          "section": "4.3",
+          "question": "An enzyme that works at 37 degrees C is suddenly exposed to 90 degrees C. What happens?",
+          "choices": [
+            "The enzyme works faster due to higher kinetic energy of molecules",
+            "The enzyme denatures — hydrogen bonds holding its 3D shape break and the active site is destroyed",
+            "The enzyme becomes a competitive inhibitor",
+            "Nothing — enzymes are not affected by temperature"
+          ],
+          "answerIndex": 1,
+          "explanation": "Extreme heat disrupts the hydrogen bonds, hydrophobic interactions, and other forces maintaining an enzyme's tertiary structure. The protein unfolds (denatures) and can no longer bind substrate. Most human enzymes denature above ~45 degrees C.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-q-007",
+          "section": "4.3",
+          "question": "A drug molecule is shaped like the normal substrate and binds the enzyme's active site, blocking the reaction. The drug is acting as a:",
+          "choices": [
+            "Non-competitive inhibitor",
+            "Coenzyme",
+            "Competitive inhibitor",
+            "Allosteric activator"
+          ],
+          "answerIndex": 2,
+          "explanation": "A competitive inhibitor mimics the substrate and competes for the active site. The inhibition is reversible: adding more substrate can displace the inhibitor by out-competing it for access to the active site.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-008",
+          "section": "4.3",
+          "question": "An allosteric inhibitor binds a site OTHER than the active site and reduces enzyme activity. Adding more substrate:",
+          "choices": [
+            "Will overcome the inhibition because more substrate outcompetes the inhibitor",
+            "Will have no effect — the inhibitor changes the enzyme's shape regardless of substrate concentration",
+            "Will denature the inhibitor",
+            "Will increase the activation energy of the reaction"
+          ],
+          "answerIndex": 1,
+          "explanation": "Non-competitive (allosteric) inhibitors alter the enzyme's conformation by binding the allosteric site. Because they do not compete with the substrate for the active site, increasing substrate concentration cannot reverse the effect.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch4-q-009",
+          "section": "4.4",
+          "question": "A red blood cell placed in pure water will:",
+          "choices": [
+            "Shrink because the cell's solutes draw water in",
+            "Stay the same size because its membrane is impermeable",
+            "Swell and potentially burst as water enters by osmosis",
+            "Lose solutes to equalize concentrations"
+          ],
+          "answerIndex": 2,
+          "explanation": "Pure water is hypotonic to the red blood cell. Water moves by osmosis into the cell (toward higher solute concentration inside), causing the cell to swell and potentially lyse (osmotic lysis).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-010",
+          "section": "4.4",
+          "question": "Cucumbers shrivel when placed in very salty brine. This occurs because:",
+          "choices": [
+            "Salt actively pumps water out through transport proteins",
+            "The brine is hypertonic; water exits cells by osmosis toward the higher solute concentration outside",
+            "The brine is hypotonic; water rushes in and cells burst",
+            "Salt denatures membrane transport proteins"
+          ],
+          "answerIndex": 1,
+          "explanation": "High-salt brine is hypertonic relative to the cucumber cells. Water moves by osmosis out of cells (from higher water concentration inside to lower water concentration outside), causing the cells to shrink and the cucumber to shrivel.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-011",
+          "section": "4.4",
+          "question": "Glucose cannot diffuse through the lipid bilayer on its own. How does it enter most cells?",
+          "choices": [
+            "Active transport via the Na+/K+ pump",
+            "Facilitated diffusion through GLUT carrier proteins — passive, no ATP required",
+            "Endocytosis via phagocytosis",
+            "Simple diffusion through the hydrophobic core"
+          ],
+          "answerIndex": 1,
+          "explanation": "Glucose is polar and too large to cross the hydrophobic bilayer unaided. GLUT (glucose transporter) carrier proteins allow glucose to move by facilitated diffusion — down its concentration gradient without using ATP.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-012",
+          "section": "4.4",
+          "question": "The Na+/K+ pump moves ions AGAINST their concentration gradients. This is an example of:",
+          "choices": [
+            "Simple diffusion",
+            "Facilitated diffusion",
+            "Active transport — requires ATP to move substances from low to high concentration",
+            "Osmosis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Active transport moves substances against their concentration gradient (uphill), which requires energy from ATP. The Na+/K+ pump hydrolyzes one ATP to move 3 Na+ out and 2 K+ in, against both ions' concentration gradients.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-013",
+          "section": "4.4",
+          "question": "Which pair of transport processes are BOTH passive (no ATP needed)?",
+          "choices": [
+            "Active transport and facilitated diffusion",
+            "Simple diffusion and osmosis",
+            "Endocytosis and exocytosis",
+            "The Na+/K+ pump and pinocytosis"
+          ],
+          "answerIndex": 1,
+          "explanation": "Both simple diffusion and osmosis are passive: they move substances or water down their concentration gradients without energy input. Active transport, endocytosis, and exocytosis all require ATP.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-q-014",
+          "section": "4.4",
+          "question": "A goblet cell in the intestinal lining secretes mucus into the intestinal lumen. Which process is used?",
+          "choices": [
+            "Phagocytosis",
+            "Pinocytosis",
+            "Exocytosis — vesicles fuse with the membrane to release contents outside",
+            "Receptor-mediated endocytosis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Exocytosis is the process by which secretory vesicles (carrying mucus, hormones, enzymes, etc.) fuse with the plasma membrane and release their contents to the cell exterior.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch4-q-015",
+          "section": "4.4",
+          "question": "A white blood cell surrounds and engulfs a bacterial cell. Which process is this?",
+          "choices": [
+            "Exocytosis",
+            "Pinocytosis",
+            "Phagocytosis — a type of endocytosis for large solid particles",
+            "Facilitated diffusion"
+          ],
+          "answerIndex": 2,
+          "explanation": "Phagocytosis ('cell eating') is endocytosis of large solid particles. The white blood cell extends pseudopods around the bacterium, enclosing it in a phagosome that fuses with a lysosome for digestion.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch4-q-016",
+          "section": "ch4-s1",
+          "difficulty": "easy",
+          "question": "The Second Law of Thermodynamics states that:",
+          "choices": [
+            "Energy cannot be created or destroyed, only converted",
+            "Energy tends to disperse and entropy (disorder) tends to increase in any energy conversion",
+            "All reactions require a catalyst to proceed",
+            "Living things are exempt from the laws of thermodynamics"
+          ],
+          "answerIndex": 1,
+          "explanation": "The Second Law: every energy conversion produces some heat (waste energy), increasing entropy. This is why no process is 100% efficient. Living organisms must continuously import energy just to maintain their organized, low-entropy state — defying local disorder by increasing entropy elsewhere."
+        },
+        {
+          "id": "ch4-q-017",
+          "section": "ch4-s1",
+          "difficulty": "medium",
+          "question": "In metabolism, coupled reactions refer to:",
+          "choices": [
+            "Two reactions that occur in the same organelle simultaneously",
+            "Using the free energy released by an exergonic (energy-releasing) reaction to drive an endergonic (energy-requiring) reaction",
+            "Two enzymes binding the same substrate at the same time",
+            "Reactions that both require oxygen to proceed"
+          ],
+          "answerIndex": 1,
+          "explanation": "ATP couples reactions: its hydrolysis (exergonic, −7.3 kcal/mol) releases energy used to drive otherwise unfavorable endergonic reactions (like active transport, biosynthesis). Without coupling, endergonic reactions would not proceed spontaneously."
+        },
+        {
+          "id": "ch4-q-018",
+          "section": "ch4-s2",
+          "difficulty": "medium",
+          "question": "A cofactor differs from a coenzyme in that a cofactor is typically:",
+          "choices": [
+            "An organic molecule derived from a vitamin that loosely associates with the enzyme",
+            "An inorganic ion (like Mg²⁺, Zn²⁺, Fe²⁺) required for enzyme activity; coenzymes are organic helper molecules",
+            "Permanently covalently bound to the enzyme and never released",
+            "Always larger than the enzyme active site it assists"
+          ],
+          "answerIndex": 1,
+          "explanation": "Cofactors are inorganic ions (Mg²⁺ in kinases, Zn²⁺ in carbonic anhydrase, Fe²⁺ in cytochromes). Coenzymes are organic molecules, often vitamin derivatives (NAD⁺ from niacin, FAD from riboflavin, Coenzyme A from pantothenic acid). Both are required for enzyme activity."
+        },
+        {
+          "id": "ch4-q-019",
+          "section": "ch4-s2",
+          "difficulty": "medium",
+          "question": "Feedback inhibition in a metabolic pathway means the end product:",
+          "choices": [
+            "Speeds up the first enzyme in the pathway to produce more end product",
+            "Allosterically inhibits an enzyme early in the pathway, shutting down production when sufficient product has accumulated",
+            "Competitively blocks the active site of the final enzyme in the pathway",
+            "Causes all enzymes in the pathway to denature"
+          ],
+          "answerIndex": 1,
+          "explanation": "Feedback inhibition is a regulatory mechanism where the end product binds an allosteric site on an early enzyme, changing its shape and reducing its activity. Example: isoleucine (end product) inhibits threonine deaminase (first enzyme in its synthesis pathway) when enough isoleucine exists."
+        },
+        {
+          "id": "ch4-q-020",
+          "section": "ch4-s3",
+          "difficulty": "medium",
+          "question": "A plant cell placed in a hypotonic solution will:",
+          "choices": [
+            "Lose water and undergo plasmolysis (membrane pulls away from cell wall)",
+            "Gain water by osmosis; the cell wall resists bursting, resulting in turgor pressure that gives the cell rigidity",
+            "Remain unchanged because plant cells are isotonic to all environments",
+            "Lose its chloroplasts through exocytosis"
+          ],
+          "answerIndex": 1,
+          "explanation": "In a hypotonic solution, water moves in by osmosis. Unlike animal cells (which lyse), plant cell walls provide pressure resistance. The resulting turgor pressure keeps plants rigid — loss of turgor (in isotonic or hypertonic solutions) causes wilting."
+        },
+        {
+          "id": "ch4-q-021",
+          "section": "ch4-s3",
+          "difficulty": "easy",
+          "question": "Which of these crosses the plasma membrane by SIMPLE diffusion, requiring no transport proteins?",
+          "choices": [
+            "Glucose (large, polar molecule)",
+            "Sodium ions (Na⁺, charged)",
+            "CO₂ (small, nonpolar molecule)",
+            "Large proteins"
+          ],
+          "answerIndex": 2,
+          "explanation": "Simple diffusion requires a small, nonpolar or very small polar molecule. CO₂ and O₂ pass directly through the lipid bilayer. Large polar molecules (glucose) need channel/carrier proteins (facilitated diffusion); ions need channel or pump proteins; proteins cannot diffuse through membranes."
+        },
+        {
+          "id": "ch4-q-022",
+          "section": "ch4-s3",
+          "difficulty": "medium",
+          "question": "Receptor-mediated endocytosis differs from phagocytosis because:",
+          "choices": [
+            "Receptor-mediated endocytosis uses ATP; phagocytosis is passive",
+            "Receptor-mediated endocytosis specifically binds target molecules via surface receptors before engulfing them; phagocytosis nonspecifically engulfs large particles",
+            "Receptor-mediated endocytosis is found only in plant cells",
+            "Phagocytosis requires a nucleus; receptor-mediated endocytosis does not"
+          ],
+          "answerIndex": 1,
+          "explanation": "Receptor-mediated endocytosis uses membrane receptors to selectively bind specific target molecules (like LDL cholesterol or viruses), then draws them in via a coated pit and vesicle. Phagocytosis ('cell eating') is a non-specific engulfment of large particles — like macrophages engulfing bacteria or debris."
+        },
+        {
+          "id": "ch4-q-023",
+          "section": "ch4-s1",
+          "difficulty": "hard",
+          "question": "Why must organisms continuously consume food and energy?",
+          "choices": [
+            "To maintain their body temperature regardless of environment",
+            "Because every energy conversion produces heat (entropy increases), so organisms must continuously import free energy to maintain the low-entropy, ordered state that characterizes life",
+            "Because ATP molecules can each only be used once before they are excreted",
+            "To produce oxygen for cellular respiration reactions"
+          ],
+          "answerIndex": 1,
+          "explanation": "The Second Law dictates that every metabolic reaction produces some heat (entropy). To maintain organized, ordered structures (proteins, membranes, DNA) against the tendency toward disorder, organisms must constantly import energy. Starve a cell and it quickly loses its organized state."
+        },
+        {
+          "id": "ch4-q-024",
+          "section": "ch4-s3",
+          "difficulty": "medium",
+          "question": "The Na⁺/K⁺ pump moves 3 Na⁺ OUT and 2 K⁺ IN per ATP hydrolyzed. This is an example of:",
+          "choices": [
+            "Facilitated diffusion — moving ions down concentration gradients",
+            "Simple diffusion — no energy or proteins required",
+            "Primary active transport — directly using ATP to move ions against their concentration gradients",
+            "Secondary active transport — coupling ion movement to a pre-existing gradient"
+          ],
+          "answerIndex": 2,
+          "explanation": "Primary active transport uses ATP directly to move solutes against their concentration gradient. The Na⁺/K⁺ pump is the classic example. It maintains resting membrane potential and is essential for nerve/muscle function. Secondary active transport (e.g., glucose cotransport) piggybacks on the Na⁺ gradient the pump creates."
+        },
+        {
+          "id": "ch4-q-025",
+          "section": "ch4-s2",
+          "difficulty": "medium",
+          "question": "An enzyme's active site binds its substrate. After the reaction, the enzyme is:",
+          "choices": [
+            "Destroyed and cannot catalyze another reaction",
+            "Released unchanged and can catalyze the same reaction many times (it is a catalyst)",
+            "Permanently bound to the product",
+            "Only able to catalyze 1–2 more reactions before wearing out"
+          ],
+          "answerIndex": 1,
+          "explanation": "Enzymes are catalysts — they lower activation energy and are released unchanged after each reaction, allowing them to catalyze thousands to millions of reactions per second. Enzyme activity is not consumed by the reaction; it is regulated by temperature, pH, inhibitors, and substrate concentration."
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "title": "Photosynthesis",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Life Depends on Photosynthesis"
+        },
+        {
+          "id": "5.2",
+          "title": "Chloroplasts Capture Light Energy"
+        },
+        {
+          "id": "5.3",
+          "title": "The Light Reactions"
+        },
+        {
+          "id": "5.4",
+          "title": "The Calvin Cycle Fixes Carbon"
+        },
+        {
+          "id": "5.5",
+          "title": "C3, C4, and CAM Plants"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch5-fc-001",
+          "section": "5.1",
+          "front": "Overall equation for photosynthesis",
+          "back": "6 CO2 + 6 H2O + light energy -> C6H12O6 + 6 O2. Reactants: carbon dioxide (from air), water (from roots), and light energy. Products: glucose (stored chemical energy) and oxygen (released as a byproduct).",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-002",
+          "section": "5.2",
+          "front": "Chloroplast structure: thylakoid vs. stroma",
+          "back": "Thylakoids: flattened membrane sacs stacked in grana; site of the LIGHT REACTIONS. Stroma: fluid surrounding the thylakoids; site of the CALVIN CYCLE (light-independent reactions). Chloroplast has two outer membranes (double envelope) plus thylakoid membranes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-003",
+          "section": "5.2",
+          "front": "Chlorophyll a and b — light absorption",
+          "back": "Chlorophyll a: main photosynthetic pigment; absorbs violet-blue (~430 nm) and red (~680 nm); reflects green. Chlorophyll b: accessory pigment; absorbs blue (~453 nm) and orange-red (~642 nm); broadens absorption range. Both are found in the thylakoid membranes.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-004",
+          "section": "5.2",
+          "front": "Why do leaves look green?",
+          "back": "Chlorophylls absorb red and blue light strongly but reflect and transmit GREEN wavelengths. Our eyes detect the reflected green light. Leaves appear red/orange in fall when chlorophyll breaks down, revealing carotenoids.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-005",
+          "section": "5.2",
+          "front": "Carotenoids (carotenes and xanthophylls)",
+          "back": "Accessory pigments that absorb blue-green light (~400-500 nm) and reflect yellow, orange, and red. They extend the range of wavelengths used for photosynthesis and protect chlorophyll from excess light (photoprotection).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-006",
+          "section": "5.3",
+          "front": "Photosystem II (PSII) — P680",
+          "back": "Absorbs light at 680 nm. Light excites electrons in the reaction-center chlorophyll. Water molecules are split (photolysis: 2 H2O -> 4 H+ + 4 e- + O2) to replace the lost electrons. OXYGEN IS RELEASED AS A BYPRODUCT HERE.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-007",
+          "section": "5.3",
+          "front": "Electron transport chain between PSII and PSI",
+          "back": "Electrons from PSII pass through plastoquinone (PQ), the cytochrome b6f complex, and plastocyanin (PC). This electron flow pumps H+ into the thylakoid lumen, creating a proton gradient that drives ATP synthase (photophosphorylation).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-008",
+          "section": "5.3",
+          "front": "Photosystem I (PSI) — P700",
+          "back": "Absorbs light at 700 nm. Re-energizes electrons arriving from PSII. Electrons are passed to ferredoxin and then to NADP+ reductase, which reduces NADP+ + H+ -> NADPH. NADPH is an electron carrier used in the Calvin cycle.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-009",
+          "section": "5.3",
+          "front": "Products of the light reactions",
+          "back": "Three products: (1) ATP — from photophosphorylation via the proton gradient; (2) NADPH — electron carrier from PSI; (3) O2 — byproduct of water splitting at PSII. These products are used in the Calvin cycle. No glucose is made in the light reactions.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-010",
+          "section": "5.4",
+          "front": "Calvin cycle — location and summary",
+          "back": "Occurs in the STROMA. Three phases: (1) Carbon fixation: CO2 + RuBP (5C) -> 2 molecules of 3-PGA (3C), catalyzed by RuBisCO. (2) Reduction: ATP + NADPH convert 3-PGA -> G3P. (3) Regeneration of RuBP: G3P + ATP -> RuBP. Net: 1 G3P exits per 3 CO2 fixed.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-011",
+          "section": "5.4",
+          "front": "Role of RuBisCO",
+          "back": "Ribulose bisphosphate carboxylase-oxygenase (RuBisCO) is the enzyme that catalyzes carbon fixation: it adds CO2 to the 5-carbon acceptor RuBP, forming an unstable 6C compound that splits into two 3C molecules (3-PGA). It is the most abundant enzyme on Earth.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-012",
+          "section": "5.4",
+          "front": "G3P (glyceraldehyde-3-phosphate) — the Calvin cycle output",
+          "back": "G3P is the 3-carbon sugar produced by the Calvin cycle. It is the raw material for glucose, starch, cellulose, amino acids, and fatty acids. To make 1 glucose (6C), 2 G3P molecules are combined. To make 1 G3P, 3 CO2 are fixed and 9 ATP + 6 NADPH are consumed.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-013",
+          "section": "5.4",
+          "front": "Energy inputs and outputs of the Calvin cycle",
+          "back": "To fix 3 CO2 and produce 1 G3P: uses 9 ATP + 6 NADPH (from light reactions); releases 9 ADP + 8 Pi + 6 NADP+. The cycle regenerates its starting material (RuBP) and is powered entirely by the ATP and NADPH made in the light reactions.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-014",
+          "section": "5.5",
+          "front": "C3 plants",
+          "back": "First product of CO2 fixation is 3-phosphoglycerate (3-PGA), a 3-carbon molecule. Examples: wheat, rice, soybeans, most trees. In hot/dry conditions, C3 plants close stomata to conserve water, but this traps O2 and leads to PHOTORESPIRATION (RuBisCO fixes O2 instead of CO2), wasting energy.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-015",
+          "section": "5.5",
+          "front": "C4 plants — adapted to heat and high light",
+          "back": "First fix CO2 into a 4-carbon molecule (oxaloacetate) in mesophyll cells, then transport it to bundle-sheath cells where it releases CO2 for the Calvin cycle. This concentrates CO2 near RuBisCO, virtually eliminating photorespiration. Examples: corn, sugarcane, sorghum.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-016",
+          "section": "5.5",
+          "front": "CAM plants — adapted to arid environments",
+          "back": "Crassulacean Acid Metabolism: stomata open ONLY AT NIGHT to fix CO2 into malate (stored in vacuoles). During the day, stomata close (minimizing water loss) and stored CO2 is released for the Calvin cycle. Examples: cacti, agave, pineapple, aloe vera.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-017",
+          "section": "5.3",
+          "front": "Cyclic vs. non-cyclic photophosphorylation",
+          "back": "Non-cyclic: uses both PSII and PSI; produces ATP, NADPH, and O2; normal photosynthesis. Cyclic: electrons from PSI cycle back through the ETC to PSII; produces ONLY ATP (no NADPH, no O2). Used when the cell needs extra ATP but not NADPH.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-fc-018",
+          "section": "5.2",
+          "front": "Absorption spectrum vs. action spectrum",
+          "back": "Absorption spectrum: shows which wavelengths of light a pigment absorbs (measured in a spectrophotometer). Action spectrum: shows which wavelengths drive photosynthesis most effectively (measured by O2 production or CO2 uptake). They closely match, confirming that light absorption drives photosynthesis.",
+          "difficulty": "medium",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch5-q-001",
+          "section": "5.1",
+          "question": "What are the REACTANTS and PRODUCTS of photosynthesis (overall equation)?",
+          "choices": [
+            "Reactants: O2 + glucose; Products: CO2 + H2O",
+            "Reactants: CO2 + H2O + light; Products: glucose + O2",
+            "Reactants: CO2 + ATP; Products: glucose + H2O",
+            "Reactants: glucose + O2; Products: CO2 + H2O + ATP"
+          ],
+          "answerIndex": 1,
+          "explanation": "Photosynthesis: 6 CO2 + 6 H2O + light energy -> C6H12O6 + 6 O2. Carbon dioxide and water are the raw materials; light provides the energy; glucose and oxygen are the outputs.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-q-002",
+          "section": "5.3",
+          "question": "Where in the chloroplast do the light reactions occur?",
+          "choices": [
+            "Stroma",
+            "Outer membrane",
+            "Thylakoid membranes",
+            "Cytoplasm"
+          ],
+          "answerIndex": 2,
+          "explanation": "The light reactions occur in and on the thylakoid membranes (in the grana). The ATP synthase, photosystems, and electron transport chain components are embedded in these membranes.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-q-003",
+          "section": "5.4",
+          "question": "Where in the chloroplast does the Calvin cycle occur?",
+          "choices": [
+            "Thylakoid lumen",
+            "Stroma",
+            "Grana",
+            "Outer membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "The Calvin cycle (light-independent reactions) takes place in the stroma — the fluid-filled space surrounding the thylakoids. The enzymes for carbon fixation and G3P production are dissolved in the stroma.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-q-004",
+          "section": "5.3",
+          "question": "The oxygen released during photosynthesis comes from:",
+          "choices": [
+            "Carbon dioxide being split",
+            "Water molecules being split during the light reactions at PSII",
+            "Glucose being broken down",
+            "The Calvin cycle releasing O2 from CO2"
+          ],
+          "answerIndex": 1,
+          "explanation": "During the light reactions, Photosystem II splits water (photolysis: 2 H2O -> 4 H+ + 4 e- + O2). The oxygen released into the atmosphere is entirely derived from water, not from CO2.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-005",
+          "section": "5.3",
+          "question": "Photosystem II (PSII) absorbs light at ~680 nm. What is produced at PSII?",
+          "choices": [
+            "NADPH and RuBP",
+            "ATP only",
+            "Excited electrons (passed to ETC), O2 (from water splitting), and H+ ions",
+            "G3P and ADP"
+          ],
+          "answerIndex": 2,
+          "explanation": "At PSII: light excites electrons in P680 chlorophyll. Water is split to replace those electrons, releasing O2 and H+. The excited electrons then enter the electron transport chain, driving ATP synthesis.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch5-q-006",
+          "section": "5.3",
+          "question": "What molecule does Photosystem I (PSI) ultimately produce?",
+          "choices": [
+            "ATP via photophosphorylation",
+            "NADPH — the electron carrier used in the Calvin cycle",
+            "O2 from water splitting",
+            "G3P for glucose synthesis"
+          ],
+          "answerIndex": 1,
+          "explanation": "PSI re-energizes electrons and passes them to NADP+ reductase, which reduces NADP+ to NADPH. NADPH carries electrons (reducing power) to the Calvin cycle to power carbon fixation and G3P production.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-007",
+          "section": "5.4",
+          "question": "What enzyme catalyzes carbon fixation in the Calvin cycle — adding CO2 to RuBP?",
+          "choices": [
+            "ATP synthase",
+            "NADP+ reductase",
+            "RuBisCO",
+            "Helicase"
+          ],
+          "answerIndex": 2,
+          "explanation": "RuBisCO (ribulose bisphosphate carboxylase-oxygenase) catalyzes the attachment of CO2 to the 5-carbon RuBP, the first step of the Calvin cycle. It is the most abundant enzyme on Earth.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-008",
+          "section": "5.4",
+          "question": "What does the Calvin cycle USE as inputs (besides CO2) and what does it directly PRODUCE?",
+          "choices": [
+            "Uses O2 and glucose; produces CO2 and H2O",
+            "Uses ATP and NADPH (from light reactions) + CO2; produces G3P",
+            "Uses only sunlight and CO2; produces RuBP",
+            "Uses G3P; produces ATP and NADPH"
+          ],
+          "answerIndex": 1,
+          "explanation": "The Calvin cycle uses ATP and NADPH (both products of the light reactions) plus CO2 to build G3P (glyceraldehyde-3-phosphate), the 3-carbon sugar used to construct glucose and other organic molecules.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-009",
+          "section": "5.4",
+          "question": "If the light reactions were suddenly blocked, what would happen to the Calvin cycle?",
+          "choices": [
+            "It would speed up because CO2 would build up",
+            "It would continue using stored ATP and NADPH for several hours",
+            "It would stop quickly because ATP and NADPH would be depleted",
+            "It would switch to using O2 instead of CO2"
+          ],
+          "answerIndex": 2,
+          "explanation": "The Calvin cycle depends entirely on ATP and NADPH produced by the light reactions. If light reactions stop, the supply of ATP and NADPH is quickly exhausted and the Calvin cycle halts.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-010",
+          "section": "5.5",
+          "question": "Corn is a C4 plant. How does C4 photosynthesis reduce photorespiration compared to C3 plants?",
+          "choices": [
+            "C4 plants close their stomata completely, so no O2 can enter",
+            "C4 plants concentrate CO2 near RuBisCO in bundle-sheath cells, outcompeting O2 for the active site",
+            "C4 plants do not use RuBisCO at all",
+            "C4 plants only photosynthesize at night"
+          ],
+          "answerIndex": 1,
+          "explanation": "C4 plants pre-fix CO2 into 4-carbon compounds in mesophyll cells and shuttle it to bundle-sheath cells, creating a high local CO2 concentration. This saturates RuBisCO with CO2, minimizing the oxygenase reaction (photorespiration) that wastes energy.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-011",
+          "section": "5.5",
+          "question": "A cactus is a CAM plant. How does it avoid water loss while still fixing CO2?",
+          "choices": [
+            "It fixes CO2 continuously through open stomata",
+            "Its stomata are always closed; it fixes CO2 from stored water",
+            "Stomata open ONLY AT NIGHT to absorb CO2; stomata are closed during the day to minimize water loss",
+            "It uses O2 from water splitting instead of CO2"
+          ],
+          "answerIndex": 2,
+          "explanation": "CAM plants open their stomata at night (when temperatures are lower and humidity is higher) to absorb CO2 and store it as malate. During the day, stomata close to prevent water loss and stored CO2 is released to power the Calvin cycle.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-012",
+          "section": "5.2",
+          "question": "Leaves appear green because chlorophyll:",
+          "choices": [
+            "Absorbs all wavelengths of visible light equally",
+            "Absorbs green light and reflects all other wavelengths",
+            "Absorbs red and blue light; reflects and transmits green light",
+            "Emits green light through fluorescence during photosynthesis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Chlorophyll strongly absorbs red (~680 nm) and blue (~430 nm) light, using that energy for photosynthesis. Green light (~550 nm) is poorly absorbed and is reflected and transmitted — which is why we see leaves as green.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch5-q-013",
+          "section": "5.2",
+          "question": "What is the role of carotenoids in photosynthesis?",
+          "choices": [
+            "They are the only pigments that can absorb light",
+            "They absorb blue-green wavelengths and transfer energy to chlorophyll, broadening the light-harvesting range",
+            "They break down water to release oxygen",
+            "They reduce NADP+ to NADPH"
+          ],
+          "answerIndex": 1,
+          "explanation": "Carotenoids (carotenes and xanthophylls) are accessory pigments that capture light wavelengths (blue-green) that chlorophyll absorbs poorly. They transfer this energy to chlorophyll a reaction centers and also protect against excess light (photoprotection).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-014",
+          "section": "5.3",
+          "question": "Which statement about the relationship between the light reactions and the Calvin cycle is correct?",
+          "choices": [
+            "The light reactions are in the stroma; Calvin cycle is in the thylakoids",
+            "They are completely independent; neither needs the other's products",
+            "The light reactions produce ATP and NADPH that power the Calvin cycle; the Calvin cycle regenerates ADP, Pi, and NADP+ that the light reactions need",
+            "The Calvin cycle produces light energy that drives the light reactions"
+          ],
+          "answerIndex": 2,
+          "explanation": "The two stages are interdependent. Light reactions produce ATP and NADPH used in the Calvin cycle; the Calvin cycle produces ADP, Pi, and NADP+ that are recycled back to the light reactions. Neither can run without the other indefinitely.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch5-q-015",
+          "section": "ch5-s2",
+          "difficulty": "medium",
+          "question": "After electrons are energized in PSII, they pass through an electron transport chain in the thylakoid membrane. What does this electron flow accomplish?",
+          "choices": [
+            "It directly synthesizes glucose",
+            "It pumps H⁺ ions from the stroma into the thylakoid lumen, creating a proton gradient that drives ATP synthase to produce ATP (photophosphorylation)",
+            "It converts NADP⁺ to NADPH without any intermediate steps",
+            "It splits water molecules to release O₂"
+          ],
+          "answerIndex": 1,
+          "explanation": "As electrons flow through the ETC from PSII toward PSI, the energy released pumps H⁺ into the thylakoid lumen. The gradient drives ATP synthase (in the thylakoid membrane) to synthesize ATP — the same chemiosmosis principle used in mitochondria, but powered by light instead of food."
+        },
+        {
+          "id": "ch5-q-016",
+          "section": "ch5-s2",
+          "difficulty": "easy",
+          "question": "What provides the electrons that ultimately reduce NADP⁺ to NADPH in the light reactions?",
+          "choices": [
+            "CO₂ absorbed from the atmosphere",
+            "Water molecules split at PSII — releasing electrons, H⁺, and O₂ as a byproduct",
+            "G3P molecules from the Calvin cycle",
+            "Glucose stored in the chloroplast"
+          ],
+          "answerIndex": 1,
+          "explanation": "Water splitting (photolysis) at PSII is the source of electrons: H₂O → 2H⁺ + ½O₂ + 2e⁻. These electrons enter PSII, travel the ETC to PSI, and are ultimately used to reduce NADP⁺ to NADPH. This is also why photosynthesis releases oxygen."
+        },
+        {
+          "id": "ch5-q-017",
+          "section": "ch5-s3",
+          "difficulty": "medium",
+          "question": "How many CO₂ molecules must enter the Calvin cycle to produce ONE net G3P molecule?",
+          "choices": [
+            "1",
+            "2",
+            "3",
+            "6"
+          ],
+          "answerIndex": 2,
+          "explanation": "Three CO₂ are fixed per Calvin cycle 'turn' → 6 G3P are produced → 5 G3P are used to regenerate 3 RuBP → only 1 G3P exits as net product. To make one glucose (6C), 6 turns are needed (6 CO₂, 18 ATP, 12 NADPH)."
+        },
+        {
+          "id": "ch5-q-018",
+          "section": "ch5-s3",
+          "difficulty": "easy",
+          "question": "Which molecule in the Calvin cycle directly accepts CO₂ during carbon fixation?",
+          "choices": [
+            "G3P (glyceraldehyde-3-phosphate)",
+            "ATP",
+            "NADPH",
+            "RuBP (ribulose-1,5-bisphosphate)"
+          ],
+          "answerIndex": 3,
+          "explanation": "RuBisCO catalyzes the attachment of CO₂ to RuBP (5C) → two 3-PGA (3C) molecules. RuBP is then regenerated using ATP and NADPH (the regeneration phase). RuBisCO is the most abundant enzyme on Earth — and the entry point for nearly all carbon entering the biosphere."
+        },
+        {
+          "id": "ch5-q-019",
+          "section": "ch5-s4",
+          "difficulty": "medium",
+          "question": "What is photorespiration, and why is it a problem for C₃ plants?",
+          "choices": [
+            "Photosynthesis that occurs at night using stored ATP — a problem in cold climates",
+            "When stomata close in hot, dry conditions, CO₂ drops and RuBisCO fixes O₂ instead of CO₂, producing a 2C compound that must be processed (wasting ATP and releasing CO₂) — reducing photosynthesis efficiency",
+            "The use of light energy to break down glucose — the reverse of photosynthesis",
+            "Excess light absorption that causes chlorophyll to degrade"
+          ],
+          "answerIndex": 1,
+          "explanation": "RuBisCO has low specificity and accepts O₂ as an alternative substrate when CO₂ levels are low (e.g., stomata closed). This photorespiration wastes energy and carbon. C₄ and CAM plants evolved mechanisms to concentrate CO₂ around RuBisCO, minimizing this problem."
+        },
+        {
+          "id": "ch5-q-020",
+          "section": "ch5-s4",
+          "difficulty": "medium",
+          "question": "C₄ plants like corn and sugarcane fix CO₂ into a 4-carbon compound (oxaloacetate) in mesophyll cells and transfer it to bundle sheath cells. The ADVANTAGE of this is:",
+          "choices": [
+            "C₄ plants produce twice the ATP per CO₂ fixed",
+            "This concentrates CO₂ around RuBisCO in bundle sheath cells, suppressing photorespiration and allowing efficient photosynthesis in hot, sunny environments",
+            "C₄ plants do not need light for the Calvin cycle",
+            "C₄ plants never close their stomata, allowing constant CO₂ entry"
+          ],
+          "answerIndex": 1,
+          "explanation": "By pre-fixing CO₂ in mesophyll cells and releasing it in bundle sheath cells where RuBisCO operates, C₄ plants maintain high CO₂ concentrations around RuBisCO even when stomata are partially closed. This minimizes photorespiration and makes C₄ plants highly productive in tropical/subtropical conditions."
+        },
+        {
+          "id": "ch5-q-021",
+          "section": "ch5-s2",
+          "difficulty": "hard",
+          "question": "Cyclic photophosphorylation produces _____ but NOT _____.",
+          "choices": [
+            "NADPH but not ATP",
+            "ATP but not NADPH or O₂",
+            "O₂ but not ATP",
+            "G3P but not NADPH"
+          ],
+          "answerIndex": 1,
+          "explanation": "In cyclic photophosphorylation, electrons from PSI are recycled back through the ETC rather than going to NADP⁺. This pumps more H⁺ to make more ATP — but without producing NADPH or splitting water (no O₂). Useful when the cell needs more ATP relative to NADPH."
+        },
+        {
+          "id": "ch5-q-022",
+          "section": "ch5-s1",
+          "difficulty": "easy",
+          "question": "Why do plant leaves appear green?",
+          "choices": [
+            "Chlorophyll absorbs green light most efficiently and converts it to energy",
+            "Chlorophyll absorbs red and blue wavelengths for photosynthesis and REFLECTS green light — the reflected green reaches our eyes",
+            "Green pigments in the vacuole color the leaf without contributing to photosynthesis",
+            "Leaves contain no pigment and appear green due to refraction of light"
+          ],
+          "answerIndex": 1,
+          "explanation": "Chlorophyll's absorption spectrum peaks in red (~680 nm) and blue (~430 nm). Green wavelengths (~550 nm) are poorly absorbed and mostly reflected. The reflected green light is what we see. In autumn, chlorophyll breaks down revealing yellow/orange carotenoids (always present, just masked by green)."
+        },
+        {
+          "id": "ch5-q-023",
+          "section": "ch5-s4",
+          "difficulty": "medium",
+          "question": "CAM plants (like cacti and pineapple) fix CO₂ at NIGHT and store it as organic acids. During the day, stomata close and stored CO₂ is released for the Calvin cycle. The PRIMARY advantage is:",
+          "choices": [
+            "Photosynthesis occurs faster at night than during the day",
+            "Opening stomata only at night minimizes water loss in arid environments while still obtaining CO₂ for daytime photosynthesis",
+            "CAM plants do not need sunlight and can photosynthesize in total darkness",
+            "The Calvin cycle runs faster when CO₂ is stored as organic acids"
+          ],
+          "answerIndex": 1,
+          "explanation": "CAM (Crassulacean Acid Metabolism) temporally separates CO₂ capture (night, stomata open) from carbon fixation in the Calvin cycle (day, stomata closed). This allows desert plants to photosynthesize during the day without the water loss that open daytime stomata would cause."
+        },
+        {
+          "id": "ch5-q-024",
+          "section": "ch5-s3",
+          "difficulty": "medium",
+          "question": "If a researcher adds radioactively labeled ¹⁴CO₂ to a plant, which molecule would FIRST become radioactively labeled during the Calvin cycle?",
+          "choices": [
+            "ATP",
+            "NADPH",
+            "3-PGA (3-phosphoglycerate), then G3P",
+            "O₂ released from water"
+          ],
+          "answerIndex": 2,
+          "explanation": "RuBisCO fixes ¹⁴CO₂ onto RuBP → two molecules of 3-PGA (one carries the radioactive carbon). 3-PGA is then reduced to G3P. This Calvin-Benson-Bassham cycle was worked out by Melvin Calvin using radioactive ¹⁴C tracers in the early 1950s."
+        },
+        {
+          "id": "ch5-q-025",
+          "section": "ch5-s2",
+          "difficulty": "medium",
+          "question": "The absorption spectrum and action spectrum of chlorophyll closely match. What does this demonstrate?",
+          "choices": [
+            "All wavelengths of visible light are equally effective at driving photosynthesis",
+            "The wavelengths absorbed by chlorophyll are the wavelengths that actually power photosynthesis — not just absorbed harmlessly",
+            "Green light is the most effective wavelength for photosynthesis",
+            "Photosynthesis works better at higher temperatures because more wavelengths are absorbed"
+          ],
+          "answerIndex": 1,
+          "explanation": "The absorption spectrum shows which wavelengths chlorophyll absorbs; the action spectrum shows which wavelengths drive photosynthesis most effectively. Their close match proves that absorbed wavelengths are the ones doing useful work. Both peak at red and blue; both show low activity for green light."
+        }
+      ]
+    },
+    {
+      "id": "ch6",
+      "title": "Cellular Respiration and Fermentation",
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Cells Use Energy from Organic Molecules"
+        },
+        {
+          "id": "6.2",
+          "title": "Glycolysis Breaks Down Glucose to Pyruvate"
+        },
+        {
+          "id": "6.3",
+          "title": "Pyruvate Is Oxidized to Acetyl-CoA"
+        },
+        {
+          "id": "6.4",
+          "title": "The Krebs Cycle Extracts More Energy"
+        },
+        {
+          "id": "6.5",
+          "title": "The Electron Transport Chain and Chemiosmosis"
+        },
+        {
+          "id": "6.6",
+          "title": "Fermentation Supports Glycolysis Without Oxygen"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ch6-fc-001",
+          "section": "6.1",
+          "front": "Overall equation for aerobic cellular respiration",
+          "back": "C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O + energy (ATP + heat). Glucose is oxidized; oxygen is the final electron acceptor; carbon is released as CO2; energy is captured as ~36-38 ATP (classical estimate; modern biochemistry suggests ~30-32 ATP per glucose).",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-002",
+          "section": "6.1",
+          "front": "Cellular respiration is catabolic and exergonic",
+          "back": "Catabolism = breaking down complex molecules into simpler ones. Respiration dismantles glucose and releases the stored chemical energy as ATP. It is exergonic (negative delta G), proceeding spontaneously in a series of enzyme-controlled steps.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-003",
+          "section": "6.2",
+          "front": "Glycolysis — location and overview",
+          "back": "CYTOPLASM (cytosol). Glucose (6C) -> 2 pyruvate (3C). In two phases: energy investment (2 ATP used) and energy payoff (4 ATP + 2 NADH produced). Net gain: 2 ATP + 2 NADH. Does NOT require oxygen. Occurs in all living cells.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-004",
+          "section": "6.2",
+          "front": "Net products of glycolysis per glucose",
+          "back": "Net 2 ATP (4 produced - 2 invested), 2 NADH, and 2 pyruvate (3C). No CO2 is released during glycolysis. The 2 NADH will donate electrons to the ETC (if O2 is available) for further ATP production.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-005",
+          "section": "6.3",
+          "front": "Pyruvate oxidation (pyruvate decarboxylation)",
+          "back": "Occurs in the MITOCHONDRIAL MATRIX. Each pyruvate is converted: pyruvate -> acetyl-CoA (2C) + CO2 (1C released per pyruvate, so 2 CO2 per glucose) + 1 NADH. Acetyl-CoA enters the Krebs cycle. Net per glucose: 2 acetyl-CoA + 2 CO2 + 2 NADH.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-006",
+          "section": "6.4",
+          "front": "Krebs cycle (citric acid cycle) — location and overview",
+          "back": "MITOCHONDRIAL MATRIX. Acetyl-CoA (2C) combines with oxaloacetate (4C) -> citrate (6C) which is progressively oxidized back to oxaloacetate. Per cycle: 3 NADH, 1 FADH2, 1 ATP (GTP), 2 CO2 released. Two turns per glucose (2 acetyl-CoA).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-007",
+          "section": "6.4",
+          "front": "Krebs cycle products per glucose (2 turns)",
+          "back": "2 turns x each turn: 3 NADH, 1 FADH2, 1 ATP, 2 CO2. Totals per glucose: 6 NADH + 2 FADH2 + 2 ATP + 4 CO2. Combined with pyruvate oxidation: total CO2 released = 6 per glucose (2 from pyruvate ox + 4 from Krebs).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-008",
+          "section": "6.5",
+          "front": "Electron transport chain (ETC) — location",
+          "back": "INNER MITOCHONDRIAL MEMBRANE. NADH and FADH2 donate electrons to protein complexes (I, II, III, IV). Electrons pass down the chain to the final electron acceptor, O2, forming H2O. Energy released pumps H+ into the intermembrane space.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-009",
+          "section": "6.5",
+          "front": "Chemiosmosis and ATP synthase",
+          "back": "H+ ions pumped into the intermembrane space by the ETC flow back through ATP synthase (complex V) down their electrochemical gradient into the matrix. This proton flow powers the rotation of ATP synthase, which phosphorylates ADP -> ATP. This is oxidative phosphorylation.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-010",
+          "section": "6.5",
+          "front": "Why is oxygen the final electron acceptor?",
+          "back": "Oxygen has a very high electronegativity and pulls electrons strongly. At the end of the ETC, 4 electrons + 4 H+ + O2 -> 2 H2O. Without O2 to accept electrons, the ETC backs up, H+ gradient collapses, and ATP synthase stops — aerobic respiration ceases.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-011",
+          "section": "6.5",
+          "front": "Total ATP yield from aerobic respiration",
+          "back": "Classical estimate: ~36-38 ATP per glucose. Modern estimate: ~30-32 ATP. Breakdown: glycolysis (2 ATP), Krebs (2 ATP), oxidative phosphorylation via NADH (~2.5 ATP each x 10 = 25) and FADH2 (~1.5 ATP each x 2 = 3). Actual yield varies by conditions.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-012",
+          "section": "6.5",
+          "front": "Where is CO2 released during aerobic respiration?",
+          "back": "CO2 is released ONLY during pyruvate oxidation and the Krebs cycle — NOT during glycolysis or the ETC. Per glucose: 2 CO2 from pyruvate oxidation + 4 CO2 from Krebs = 6 CO2 total. This matches the overall equation (6 CO2 per glucose).",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-013",
+          "section": "6.6",
+          "front": "Fermentation — purpose and key feature",
+          "back": "Fermentation regenerates NAD+ from NADH so that glycolysis can continue without oxygen. NAD+ is a required electron carrier for glycolysis. WITHOUT fermentation (or an ETC), cells would run out of NAD+, glycolysis would stop, and ATP production would cease entirely. Fermentation itself produces no additional ATP beyond glycolysis's 2 ATP.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-014",
+          "section": "6.6",
+          "front": "Lactic acid fermentation",
+          "back": "Pyruvate + NADH -> lactate + NAD+. Occurs in: human muscle cells during intense exercise (lactate buildup causes burning sensation); bacteria used in yogurt, cheese, sauerkraut, and kimchi. Lactate can be converted back to pyruvate in the liver (Cori cycle) when O2 is again available.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-015",
+          "section": "6.6",
+          "front": "Alcoholic (ethanol) fermentation",
+          "back": "Pyruvate -> acetaldehyde + CO2 (by pyruvate decarboxylase), then acetaldehyde + NADH -> ethanol + NAD+ (by alcohol dehydrogenase). Occurs in yeast. Used in: bread rising (CO2 causes dough to expand), beer, wine, and spirits. Humans cannot reverse this to produce energy from ethanol the same way.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-016",
+          "section": "6.6",
+          "front": "Aerobic respiration vs. fermentation — ATP comparison",
+          "back": "Aerobic respiration: ~36-38 ATP per glucose (uses ETC + chemiosmosis). Fermentation: only 2 ATP per glucose (glycolysis only). Fermentation is ~18-19x less efficient but works WITHOUT oxygen. Organisms switch to fermentation when O2 is unavailable.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-017",
+          "section": "6.5",
+          "front": "Role of NADH and FADH2 in aerobic respiration",
+          "back": "NADH and FADH2 are electron carriers produced in glycolysis, pyruvate oxidation, and the Krebs cycle. They deliver electrons (and their energy) to the ETC. Each NADH yields ~2.5 ATP; each FADH2 yields ~1.5 ATP. Without them, the ETC cannot pump H+ and ATP synthase cannot generate ATP.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-018",
+          "section": "6.1",
+          "front": "Stages of aerobic respiration and their locations",
+          "back": "1) Glycolysis: CYTOPLASM. 2) Pyruvate oxidation: MITOCHONDRIAL MATRIX. 3) Krebs cycle: MITOCHONDRIAL MATRIX. 4) Electron transport chain + chemiosmosis: INNER MITOCHONDRIAL MEMBRANE. Knowing these locations is essential for exam questions.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-019",
+          "section": "6.2",
+          "front": "Why glycolysis is universal",
+          "back": "Glycolysis occurs in the CYTOSOL of virtually all living cells — prokaryotes and eukaryotes alike. It predates mitochondria evolutionarily, operates anaerobically, and provides the starting point for both aerobic respiration and fermentation. It requires no special organelle.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-fc-020",
+          "section": "6.5",
+          "front": "Comparing the inner mitochondrial membrane to the thylakoid membrane",
+          "back": "Both use an electron transport chain and ATP synthase powered by a proton (H+) gradient. Mitochondrion: electrons from NADH/FADH2, final acceptor is O2, H+ pumped into intermembrane space. Thylakoid: electrons from water, pumped into thylakoid lumen. Both = chemiosmosis.",
+          "difficulty": "hard",
+          "image": null
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ch6-q-001",
+          "section": "6.2",
+          "question": "In which part of the cell does glycolysis occur?",
+          "choices": [
+            "Mitochondrial matrix",
+            "Inner mitochondrial membrane",
+            "Cytoplasm (cytosol)",
+            "Nucleus"
+          ],
+          "answerIndex": 2,
+          "explanation": "Glycolysis occurs in the cytoplasm (cytosol). It requires no mitochondria, which is why even prokaryotes (which lack mitochondria) perform glycolysis.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-002",
+          "section": "6.2",
+          "question": "What is the NET ATP gain from glycolysis?",
+          "choices": [
+            "4 ATP",
+            "2 ATP",
+            "36 ATP",
+            "0 ATP — glycolysis consumes all ATP it makes"
+          ],
+          "answerIndex": 1,
+          "explanation": "Glycolysis invests 2 ATP to break down glucose, then produces 4 ATP in the payoff phase: net gain = 4 - 2 = 2 ATP per glucose. It also produces 2 NADH and 2 pyruvate.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-003",
+          "section": "6.2",
+          "question": "Which statement about glycolysis is correct?",
+          "choices": [
+            "It requires oxygen",
+            "It occurs in the mitochondrial matrix",
+            "It produces 2 pyruvate, 2 NADH, and a net 2 ATP per glucose",
+            "It releases CO2 as a byproduct"
+          ],
+          "answerIndex": 2,
+          "explanation": "Glycolysis splits glucose (6C) into 2 pyruvate (3C each), producing 2 NADH and a net 2 ATP. No O2 is required and no CO2 is released.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-004",
+          "section": "6.5",
+          "question": "What is the FINAL electron acceptor at the end of the electron transport chain in aerobic respiration?",
+          "choices": [
+            "NAD+",
+            "CO2",
+            "Oxygen (O2)",
+            "ADP"
+          ],
+          "answerIndex": 2,
+          "explanation": "Oxygen is the final electron acceptor in the ETC. It combines with electrons and H+ to form water (2 H2O). Without O2, the ETC cannot accept more electrons, shuts down, and ATP synthesis via chemiosmosis stops.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-005",
+          "section": "6.4",
+          "question": "Where does the Krebs cycle occur?",
+          "choices": [
+            "Cytoplasm",
+            "Inner mitochondrial membrane",
+            "Thylakoid membrane",
+            "Mitochondrial matrix"
+          ],
+          "answerIndex": 3,
+          "explanation": "Both pyruvate oxidation and the Krebs cycle take place in the mitochondrial matrix, the aqueous compartment enclosed by the inner mitochondrial membrane.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-006",
+          "section": "6.4",
+          "question": "For EACH turn of the Krebs cycle (per acetyl-CoA), what is produced?",
+          "choices": [
+            "4 NADH, 2 FADH2, 2 ATP, 1 CO2",
+            "3 NADH, 1 FADH2, 1 ATP, 2 CO2",
+            "2 NADH, 2 FADH2, 2 ATP, 2 CO2",
+            "1 NADH, 1 FADH2, 2 ATP, 4 CO2"
+          ],
+          "answerIndex": 1,
+          "explanation": "Per turn: 3 NADH, 1 FADH2, 1 ATP (via GTP), and 2 CO2. Since 2 acetyl-CoA enter per glucose, the Krebs cycle runs twice per glucose, doubling these totals.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-q-007",
+          "section": "6.5",
+          "question": "What drives ATP synthase in the mitochondrion during aerobic respiration?",
+          "choices": [
+            "Direct transfer of phosphate from pyruvate",
+            "The flow of electrons from NADH to O2",
+            "H+ ions flowing back into the matrix through ATP synthase down their electrochemical gradient (chemiosmosis)",
+            "CO2 released from the Krebs cycle"
+          ],
+          "answerIndex": 2,
+          "explanation": "The ETC pumps H+ into the intermembrane space. H+ ions flow back into the matrix through ATP synthase, and this proton flow powers the mechanical rotation of ATP synthase, which phosphorylates ADP to ATP (chemiosmosis / oxidative phosphorylation).",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-q-008",
+          "section": "6.6",
+          "question": "The PRIMARY purpose of fermentation is to:",
+          "choices": [
+            "Produce more ATP when oxygen is scarce",
+            "Regenerate NAD+ from NADH so that glycolysis can continue producing ATP",
+            "Break down pyruvate into CO2 and water",
+            "Power the electron transport chain without oxygen"
+          ],
+          "answerIndex": 1,
+          "explanation": "Glycolysis needs NAD+ to accept electrons. Fermentation oxidizes NADH back to NAD+ (transferring electrons to pyruvate to make lactate or ethanol) so glycolysis can keep running. Fermentation itself generates no new ATP.",
+          "difficulty": "hard",
+          "image": null
+        },
+        {
+          "id": "ch6-q-009",
+          "section": "6.6",
+          "question": "Which products are formed during LACTIC ACID fermentation?",
+          "choices": [
+            "Ethanol + CO2 + NAD+",
+            "Lactate + NAD+",
+            "Acetyl-CoA + NADH + CO2",
+            "Glucose + O2"
+          ],
+          "answerIndex": 1,
+          "explanation": "In lactic acid fermentation, pyruvate accepts electrons from NADH, forming lactate and regenerating NAD+. No CO2 is released. This occurs in muscle cells during intense exercise and in bacteria used for yogurt and cheese.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-010",
+          "section": "6.6",
+          "question": "Bread rises because yeast perform alcoholic fermentation. What gas is responsible for the bubbles?",
+          "choices": [
+            "Oxygen",
+            "Lactate",
+            "Carbon dioxide (CO2)",
+            "Ethanol vapor"
+          ],
+          "answerIndex": 2,
+          "explanation": "During alcoholic fermentation, pyruvate is converted to ethanol and CO2. The CO2 gas becomes trapped in dough, causing it to rise. The ethanol evaporates during baking.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-011",
+          "section": "6.5",
+          "question": "Compared to fermentation, aerobic respiration produces approximately how much more ATP per glucose?",
+          "choices": [
+            "2x more",
+            "5x more",
+            "18x more",
+            "They produce the same amount"
+          ],
+          "answerIndex": 2,
+          "explanation": "Fermentation yields only 2 ATP (glycolysis alone). Aerobic respiration yields ~36-38 ATP (or ~30-32 by modern estimates). That is roughly 18-19 times more ATP, due to the ETC and oxidative phosphorylation.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-012",
+          "section": "6.5",
+          "question": "If oxygen is suddenly removed from a cell performing aerobic respiration, the ETC will stop because:",
+          "choices": [
+            "There is no more glucose to oxidize",
+            "NADH cannot be produced without O2",
+            "O2 is needed as the final electron acceptor; without it electrons pile up and the chain backs up",
+            "ATP synthase requires O2 to rotate"
+          ],
+          "answerIndex": 2,
+          "explanation": "O2 is indispensable as the terminal electron acceptor. If O2 is absent, electrons accumulate at the end of the ETC, the chain backs up, H+ is no longer pumped, the proton gradient collapses, and ATP synthase stops. The cell must switch to fermentation.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-013",
+          "section": "6.4",
+          "question": "How many total CO2 molecules are released per glucose during aerobic respiration (pyruvate oxidation + Krebs)?",
+          "choices": [
+            "2 CO2",
+            "4 CO2",
+            "6 CO2",
+            "12 CO2"
+          ],
+          "answerIndex": 2,
+          "explanation": "2 CO2 are released during pyruvate oxidation (1 per pyruvate x 2 pyruvate) + 4 CO2 from two turns of the Krebs cycle (2 per turn) = 6 CO2 total per glucose. This matches the overall equation: C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-014",
+          "section": "6.2",
+          "question": "During a sprint, muscle cells run out of oxygen and must rely on fermentation. The burning feeling is due to:",
+          "choices": [
+            "ATP accumulation in the muscle fibers",
+            "CO2 buildup in the muscle",
+            "Lactate accumulation from lactic acid fermentation",
+            "Ethanol produced by alcoholic fermentation"
+          ],
+          "answerIndex": 2,
+          "explanation": "In oxygen-depleted muscle cells, lactic acid fermentation produces lactate from pyruvate, regenerating NAD+ to sustain glycolysis. Lactate accumulation lowers pH and contributes to the burning sensation and muscle fatigue during intense exercise.",
+          "difficulty": "easy",
+          "image": null
+        },
+        {
+          "id": "ch6-q-015",
+          "section": "6.5",
+          "question": "Which location in the cell produces the MOST ATP during aerobic respiration?",
+          "choices": [
+            "Cytoplasm during glycolysis",
+            "Mitochondrial matrix during the Krebs cycle",
+            "Inner mitochondrial membrane via the ETC and ATP synthase",
+            "Nucleus during DNA replication"
+          ],
+          "answerIndex": 2,
+          "explanation": "The vast majority of ATP (~32-34 of the ~36-38 total) is produced at the inner mitochondrial membrane through oxidative phosphorylation — electrons from NADH and FADH2 drive the ETC, which powers ATP synthase via chemiosmosis.",
+          "difficulty": "medium",
+          "image": null
+        },
+        {
+          "id": "ch6-q-016",
+          "section": "ch6-s1",
+          "difficulty": "easy",
+          "question": "Which stage of cellular respiration can occur in the ABSENCE of oxygen?",
+          "choices": [
+            "Pyruvate oxidation",
+            "Krebs cycle",
+            "Electron transport chain",
+            "Glycolysis"
+          ],
+          "answerIndex": 3,
+          "explanation": "Glycolysis occurs in the cytoplasm and has no requirement for oxygen — it evolved in ancient anaerobic environments. The other three stages (pyruvate oxidation, Krebs cycle, ETC) all require or depend on oxygen to function. Glycolysis is also the first step in fermentation."
+        },
+        {
+          "id": "ch6-q-017",
+          "section": "ch6-s2",
+          "difficulty": "easy",
+          "question": "What molecule directly enters the Krebs cycle, and how is it produced?",
+          "choices": [
+            "Glucose, directly from glycolysis",
+            "Pyruvate, directly from the cytoplasm",
+            "Acetyl-CoA (2-carbon), produced when pyruvate is oxidized and decarboxylated in the mitochondrial matrix",
+            "NADH, produced in glycolysis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Pyruvate from glycolysis enters the mitochondrion, where pyruvate dehydrogenase removes one CO₂ and attaches the remaining 2-carbon fragment to coenzyme A → acetyl-CoA. This is pyruvate oxidation (pyruvate decarboxylation). One NADH is also produced per pyruvate."
+        },
+        {
+          "id": "ch6-q-018",
+          "section": "ch6-s2",
+          "difficulty": "medium",
+          "question": "How are electrons removed from organic molecules during cellular respiration and delivered to the electron transport chain?",
+          "choices": [
+            "As free electrons floating in the cytoplasm",
+            "Carried by NADH and FADH₂ (electron carriers produced in glycolysis and the Krebs cycle)",
+            "Packaged into ATP molecules for transport to the mitochondria",
+            "Dissolved in the mitochondrial matrix as hydronium ions"
+          ],
+          "answerIndex": 1,
+          "explanation": "NAD⁺ and FAD are electron carriers (oxidizing agents). When they accept electrons and H⁺ from oxidized substrates, they become NADH and FADH₂. These deliver electrons to the ETC, where energy is extracted to pump H⁺ and ultimately make ATP via chemiosmosis."
+        },
+        {
+          "id": "ch6-q-019",
+          "section": "ch6-s3",
+          "difficulty": "medium",
+          "question": "The inner mitochondrial membrane is impermeable to H⁺. Why is this critical for ATP synthesis?",
+          "choices": [
+            "It forces the matrix pH to drop, activating ATP synthase",
+            "This impermeability allows H⁺ pumped by the ETC to accumulate in the intermembrane space, creating a proton gradient. H⁺ can only re-enter the matrix through ATP synthase — powering ATP production",
+            "It prevents NADH from leaving the matrix before it donates electrons",
+            "It allows oxygen to diffuse in but blocks CO₂, concentrating it for the Krebs cycle"
+          ],
+          "answerIndex": 1,
+          "explanation": "If the inner membrane were leaky to H⁺, the proton gradient would dissipate without making ATP (proton leak generates heat but not ATP). This is why the cristae's impermeability is essential. Some organisms (and brown fat tissue in mammals) do uncouple H⁺ flow from ATP synthase on purpose — generating heat instead."
+        },
+        {
+          "id": "ch6-q-020",
+          "section": "ch6-s4",
+          "difficulty": "medium",
+          "question": "Why does alcoholic fermentation release CO₂ but lactic acid fermentation does not?",
+          "choices": [
+            "Yeast have a modified Krebs cycle that produces CO₂",
+            "In alcoholic fermentation, pyruvate is first decarboxylated to acetaldehyde (releasing CO₂) before being reduced to ethanol. In lactic acid fermentation, pyruvate is directly reduced to lactate without any carbon being released",
+            "Lactic acid fermentation uses CO₂ as a substrate rather than releasing it",
+            "CO₂ is released during glycolysis, which precedes alcoholic but not lactic acid fermentation"
+          ],
+          "answerIndex": 1,
+          "explanation": "Alcoholic: pyruvate → acetaldehyde + CO₂ (decarboxylation) → ethanol (NADH oxidized). Lactic acid: pyruvate → lactate (NADH oxidized, no carbon lost). Both regenerate NAD⁺ so glycolysis can continue. Bread rises because yeast CO₂ forms bubbles in dough."
+        },
+        {
+          "id": "ch6-q-021",
+          "section": "ch6-s1",
+          "difficulty": "medium",
+          "question": "Substrate-level phosphorylation differs from oxidative phosphorylation in that substrate-level phosphorylation:",
+          "choices": [
+            "Uses the proton gradient and ATP synthase to make ATP",
+            "Directly transfers a phosphate group from a high-energy substrate molecule to ADP, making ATP without requiring the ETC or proton gradient",
+            "Requires oxygen as the final electron acceptor",
+            "Occurs only in the mitochondrial inner membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "Substrate-level phosphorylation: a phosphate is directly transferred from a metabolic intermediate to ADP (example: PEP → pyruvate in glycolysis; succinyl-CoA → succinate in Krebs). Oxidative phosphorylation: the ETC + proton gradient + ATP synthase. Most ATP (~32–34 of ~36 total) comes from oxidative phosphorylation."
+        },
+        {
+          "id": "ch6-q-022",
+          "section": "ch6-s3",
+          "difficulty": "medium",
+          "question": "Aerobic respiration of glucose produces the same TOTAL energy as burning glucose in a flame. What makes cellular respiration more valuable?",
+          "choices": [
+            "Aerobic respiration releases more total energy than combustion",
+            "Both release the same total free energy (~686 kcal/mol), but cellular respiration captures ~40% as ATP in small controlled steps, while combustion releases everything as heat at once",
+            "Combustion is actually more efficient at capturing ATP energy",
+            "Aerobic respiration requires much less oxygen than combustion"
+          ],
+          "answerIndex": 1,
+          "explanation": "Both fully oxidize glucose to CO₂ and H₂O releasing ~686 kcal/mol. But cellular respiration releases energy gradually in small steps — each step able to power ATP synthesis — capturing ~40% as usable ATP. Burning releases it all at once as heat (entropy), useless for biological work."
+        },
+        {
+          "id": "ch6-q-023",
+          "section": "ch6-s2",
+          "difficulty": "easy",
+          "question": "After all 6 carbons of one glucose molecule pass completely through aerobic respiration, where do ALL the carbon atoms end up?",
+          "choices": [
+            "Stored in ATP molecules as chemical energy",
+            "Released as 6 CO₂ molecules (2 from pyruvate oxidation + 4 from the Krebs cycle)",
+            "Incorporated into NADH for transport to the ETC",
+            "Built into the inner mitochondrial membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "Glucose (6C) is fully oxidized: glycolysis → 2 pyruvate (3C each). Each pyruvate oxidation releases 1 CO₂ (2 total). Each Krebs cycle turn releases 2 CO₂ (4 total from 2 acetyl-CoA). Total: 6 CO₂. This is why you exhale CO₂ — it's the oxidized carbon from your food."
+        },
+        {
+          "id": "ch6-q-024",
+          "section": "ch6-s4",
+          "difficulty": "medium",
+          "question": "During intense exercise, muscle cells switch to lactic acid fermentation even though some oxygen is still present. Why?",
+          "choices": [
+            "The muscles run out of glucose and must use an alternative fuel",
+            "Oxygen delivery to muscle mitochondria cannot keep up with ATP demand, so muscles supplement aerobic respiration with fermentation to maintain the glycolytic ATP supply",
+            "Fermentation is actually more efficient than aerobic respiration at high intensity",
+            "The mitochondria become too hot during intense exercise and shut down"
+          ],
+          "answerIndex": 1,
+          "explanation": "High-intensity exercise demands ATP faster than mitochondria can supply it. Fermentation regenerates NAD⁺ so glycolysis can keep running, providing a rapid (if inefficient) ATP supply. Lactate accumulation contributes to the 'burning' sensation and muscle fatigue during intense exercise."
+        },
+        {
+          "id": "ch6-q-025",
+          "section": "ch6-s1",
+          "difficulty": "medium",
+          "question": "The overall reaction of cellular respiration (C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O) is essentially the reverse of photosynthesis. What does this relationship illustrate?",
+          "choices": [
+            "They share no enzymes or pathways and evolved independently",
+            "The products of photosynthesis are the reactants of respiration and vice versa, linking energy storage (photosynthesis) and energy release (respiration) in a cycle that connects autotrophs and heterotrophs",
+            "They both occur in chloroplasts using the same proteins",
+            "Photosynthesis and respiration produce identical amounts of energy per reaction"
+          ],
+          "answerIndex": 1,
+          "explanation": "Photosynthesis stores light energy as chemical energy (glucose + O₂); respiration releases that chemical energy for cellular work (releasing CO₂ + H₂O). Together they cycle carbon, oxygen, and energy between autotrophs (producers) and heterotrophs (consumers), forming the basis of nearly all life on Earth."
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,19 @@ import DifficultyBadge from '../components/DifficultyBadge'
 import { useFlashcards } from '../hooks/useFlashcards'
 import { isDueToday } from '../lib/sm2'
 
+const EXAM_PRESETS = [
+  { id: 'exam1', label: 'Exam I',   date: 'June 26', chapterIds: ['ch1','ch2','ch3'] },
+  { id: 'exam2', label: 'Exam II',  date: 'July 10',  chapterIds: ['ch4','ch5','ch6'] },
+  { id: 'exam3', label: 'Exam III', date: 'July 31',  chapterIds: ['ch7','ch8','ch9','ch10','ch11'] },
+  { id: 'exam4', label: 'Exam IV',  date: 'Aug 7',    chapterIds: ['ch12','ch13','ch14','ch15'] },
+]
+
+function fcCount(chapterIds) {
+  return content.chapters
+    .filter(c => chapterIds.includes(c.id))
+    .reduce((sum, c) => sum + c.flashcards.length, 0)
+}
+
 // Shuffle helper
 function shuffle(arr) {
   const a = [...arr]
@@ -22,12 +35,20 @@ function Selector({ onStart }) {
   const [mode, setMode] = useState('chapter')
   const [chapterId, setChapterId] = useState(content.chapters[0]?.id ?? '')
   const [sectionId, setSectionId] = useState('')
+  const [examId, setExamId] = useState(null)
 
   const chapter = content.chapters.find(c => c.id === chapterId)
   const sections = chapter?.sections ?? []
+  const selectedExam = EXAM_PRESETS.find(e => e.id === examId)
+
+  const canStart = mode !== 'exam' || (selectedExam && fcCount(selectedExam.chapterIds) > 0)
 
   function handleStart() {
-    onStart({ mode, chapterId, sectionId })
+    if (mode === 'exam') {
+      onStart({ mode, chapterIds: selectedExam?.chapterIds ?? [] })
+    } else {
+      onStart({ mode, chapterId, sectionId })
+    }
   }
 
   return (
@@ -43,6 +64,7 @@ function Selector({ onStart }) {
               { value: 'due',     label: 'Due today' },
               { value: 'chapter', label: 'By chapter' },
               { value: 'section', label: 'By section' },
+              { value: 'exam',    label: 'By exam' },
             ].map(opt => (
               <button
                 key={opt.value}
@@ -58,6 +80,39 @@ function Selector({ onStart }) {
             ))}
           </div>
         </div>
+
+        {/* Exam picker */}
+        {mode === 'exam' && (
+          <div className="grid grid-cols-2 gap-2">
+            {EXAM_PRESETS.map(preset => {
+              const count = fcCount(preset.chapterIds)
+              const hasContent = count > 0
+              const isSelected = examId === preset.id
+              return (
+                <button
+                  key={preset.id}
+                  onClick={() => hasContent && setExamId(preset.id)}
+                  disabled={!hasContent}
+                  className={`rounded-xl p-3 text-left border-2 transition-all
+                    ${!hasContent
+                      ? 'border-slate-100 dark:border-slate-800 opacity-40 cursor-not-allowed'
+                      : isSelected
+                        ? 'border-accent-500 bg-accent-50 dark:bg-accent-900/30'
+                        : 'border-slate-200 dark:border-slate-700 hover:border-accent-300 dark:hover:border-accent-700'
+                    }`}
+                >
+                  <p className={`font-bold text-sm ${isSelected ? 'text-accent-600 dark:text-accent-400' : 'text-slate-900 dark:text-slate-100'}`}>
+                    {preset.label}
+                  </p>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{preset.date}</p>
+                  <p className="text-xs font-medium text-accent-600 dark:text-accent-400 mt-1">
+                    {hasContent ? `${count} cards` : 'Coming soon'}
+                  </p>
+                </button>
+              )
+            })}
+          </div>
+        )}
 
         {/* Chapter picker */}
         {(mode === 'chapter' || mode === 'section') && (
@@ -96,7 +151,11 @@ function Selector({ onStart }) {
           </div>
         )}
 
-        <button onClick={handleStart} className="btn-primary w-full">
+        <button
+          onClick={handleStart}
+          disabled={!canStart}
+          className="btn-primary w-full disabled:opacity-40"
+        >
           Start Studying
         </button>
       </div>
@@ -307,10 +366,12 @@ export default function Flashcards() {
 
   const sessionCards = useMemo(() => {
     if (!session) return []
-    const { mode, chapterId, sectionId } = session
+    const { mode, chapterId, sectionId, chapterIds } = session
     let cards = []
     if (mode === 'due') {
       cards = content.chapters.flatMap(ch => ch.flashcards).filter(c => isDueToday(schedules[c.id]))
+    } else if (mode === 'exam') {
+      cards = content.chapters.filter(c => (chapterIds ?? []).includes(c.id)).flatMap(c => c.flashcards)
     } else if (mode === 'chapter') {
       cards = content.chapters.find(c => c.id === chapterId)?.flashcards ?? []
     } else {

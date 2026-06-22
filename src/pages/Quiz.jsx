@@ -5,6 +5,19 @@ import ProgressBar from '../components/ProgressBar'
 import DifficultyBadge from '../components/DifficultyBadge'
 import { useQuizStats } from '../hooks/useQuizStats'
 
+const EXAM_PRESETS = [
+  { id: 'exam1', label: 'Exam I',   date: 'June 26', chapterIds: ['ch1','ch2','ch3'] },
+  { id: 'exam2', label: 'Exam II',  date: 'July 10',  chapterIds: ['ch4','ch5','ch6'] },
+  { id: 'exam3', label: 'Exam III', date: 'July 31',  chapterIds: ['ch7','ch8','ch9','ch10','ch11'] },
+  { id: 'exam4', label: 'Exam IV',  date: 'Aug 7',    chapterIds: ['ch12','ch13','ch14','ch15'] },
+]
+
+function quizCount(chapterIds) {
+  return content.chapters
+    .filter(c => chapterIds.includes(c.id))
+    .reduce((sum, c) => sum + c.quiz.length, 0)
+}
+
 function shuffle(arr) {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -27,33 +40,104 @@ function shuffleQuestion(q) {
 // ─── Selector ─────────────────────────────────────────────────────────────────
 
 function Selector({ onStart }) {
+  const [tab, setTab] = useState('chapter')   // 'chapter' | 'exam'
   const [chapterId, setChapterId] = useState('all')
   const [sectionId, setSectionId] = useState('')
+  const [examId, setExamId] = useState(null)
 
   const chapter = content.chapters.find(c => c.id === chapterId)
   const sections = chapter?.sections ?? []
+  const selectedExam = EXAM_PRESETS.find(e => e.id === examId)
+
+  const canStart = tab === 'chapter' || (selectedExam && quizCount(selectedExam.chapterIds) > 0)
+
+  function handleStart() {
+    if (tab === 'exam') {
+      onStart({ examChapterIds: selectedExam?.chapterIds ?? [], chapterId: null, sectionId: '' })
+    } else {
+      onStart({ chapterId, sectionId, examChapterIds: null })
+    }
+  }
 
   return (
     <div className="max-w-md mx-auto space-y-6">
       <h1 className="text-3xl font-bold tracking-tight">Quiz</h1>
-      <div className="card p-6 space-y-5">
-        <div>
-          <label className="block text-sm font-medium mb-2">Chapter</label>
-          <select
-            value={chapterId}
-            onChange={e => { setChapterId(e.target.value); setSectionId('') }}
-            className="w-full rounded-xl border border-slate-200 dark:border-slate-700
-                       bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none
-                       focus:ring-2 focus:ring-accent-500"
-          >
-            <option value="all">All chapters</option>
-            {content.chapters.map(c => (
-              <option key={c.id} value={c.id}>{c.id.toUpperCase()} — {c.title}</option>
-            ))}
-          </select>
-        </div>
 
-        {chapterId !== 'all' && sections.length > 0 && (
+      {/* Tab toggle */}
+      <div className="flex gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl w-fit">
+        {[{ value: 'chapter', label: 'By Chapter' }, { value: 'exam', label: 'By Exam' }].map(t => (
+          <button
+            key={t.value}
+            onClick={() => setTab(t.value)}
+            className={`px-5 py-1.5 rounded-lg text-sm font-semibold transition-all
+              ${tab === t.value
+                ? 'bg-white dark:bg-slate-900 shadow text-slate-900 dark:text-slate-100'
+                : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+              }`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="card p-6 space-y-5">
+        {/* Exam preset picker */}
+        {tab === 'exam' && (
+          <div>
+            <label className="block text-sm font-medium mb-3">Select exam</label>
+            <div className="grid grid-cols-2 gap-2">
+              {EXAM_PRESETS.map(preset => {
+                const count = quizCount(preset.chapterIds)
+                const hasContent = count > 0
+                const isSelected = examId === preset.id
+                return (
+                  <button
+                    key={preset.id}
+                    onClick={() => hasContent && setExamId(preset.id)}
+                    disabled={!hasContent}
+                    className={`rounded-xl p-3 text-left border-2 transition-all
+                      ${!hasContent
+                        ? 'border-slate-100 dark:border-slate-800 opacity-40 cursor-not-allowed'
+                        : isSelected
+                          ? 'border-accent-500 bg-accent-50 dark:bg-accent-900/30'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-accent-300 dark:hover:border-accent-700'
+                      }`}
+                  >
+                    <p className={`font-bold text-sm ${isSelected ? 'text-accent-600 dark:text-accent-400' : 'text-slate-900 dark:text-slate-100'}`}>
+                      {preset.label}
+                    </p>
+                    <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{preset.date}</p>
+                    <p className="text-xs font-medium text-accent-600 dark:text-accent-400 mt-1">
+                      {hasContent ? `${count} questions` : 'Coming soon'}
+                    </p>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Chapter picker */}
+        {tab === 'chapter' && (
+          <div>
+            <label className="block text-sm font-medium mb-2">Chapter</label>
+            <select
+              value={chapterId}
+              onChange={e => { setChapterId(e.target.value); setSectionId('') }}
+              className="w-full rounded-xl border border-slate-200 dark:border-slate-700
+                         bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none
+                         focus:ring-2 focus:ring-accent-500"
+            >
+              <option value="all">All chapters</option>
+              {content.chapters.map(c => (
+                <option key={c.id} value={c.id}>{c.id.toUpperCase()} — {c.title}</option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {/* Section picker */}
+        {tab === 'chapter' && chapterId !== 'all' && sections.length > 0 && (
           <div>
             <label className="block text-sm font-medium mb-2">Section</label>
             <select
@@ -71,7 +155,11 @@ function Selector({ onStart }) {
           </div>
         )}
 
-        <button onClick={() => onStart({ chapterId, sectionId })} className="btn-primary w-full">
+        <button
+          onClick={handleStart}
+          disabled={!canStart}
+          className="btn-primary w-full disabled:opacity-40"
+        >
           Start Quiz
         </button>
       </div>
@@ -283,11 +371,16 @@ export default function Quiz() {
 
   const questions = useMemo(() => {
     if (!session) return []
-    const { chapterId, sectionId } = session
-    let qs = chapterId === 'all'
-      ? content.chapters.flatMap(c => c.quiz)
-      : content.chapters.find(c => c.id === chapterId)?.quiz ?? []
-    if (sectionId) qs = qs.filter(q => q.section === sectionId)
+    const { chapterId, sectionId, examChapterIds } = session
+    let qs
+    if (examChapterIds) {
+      qs = content.chapters.filter(c => examChapterIds.includes(c.id)).flatMap(c => c.quiz)
+    } else {
+      qs = chapterId === 'all'
+        ? content.chapters.flatMap(c => c.quiz)
+        : content.chapters.find(c => c.id === chapterId)?.quiz ?? []
+      if (sectionId) qs = qs.filter(q => q.section === sectionId)
+    }
     return qs
   }, [session])
 

@@ -28,12 +28,19 @@ function shuffle(arr) {
 }
 
 function shuffleQuestion(q) {
-  const indexed = q.choices.map((text, i) => ({ text, isCorrect: i === q.answerIndex }))
+  const isSA = q.type === 'selectAll'
+  const indexed = q.choices.map((text, i) => ({
+    text,
+    isCorrect: isSA ? (q.answerIndices ?? []).includes(i) : i === q.answerIndex,
+  }))
   const shuffled = shuffle(indexed)
   return {
     ...q,
     choices: shuffled.map(c => c.text),
-    answerIndex: shuffled.findIndex(c => c.isCorrect),
+    ...(isSA
+      ? { answerIndices: shuffled.reduce((acc, c, i) => c.isCorrect ? [...acc, i] : acc, []) }
+      : { answerIndex: shuffled.findIndex(c => c.isCorrect) }
+    ),
   }
 }
 
@@ -174,27 +181,59 @@ function QuizSession({ questions: rawQuestions, onExit }) {
 
   const questions = useMemo(() => shuffle(rawQuestions).map(shuffleQuestion), [])
   const [index, setIndex] = useState(0)
-  const [selected, setSelected] = useState(null)
-  const [answers, setAnswers] = useState([]) // { questionIndex, selectedIndex, correct }
+  const [selected, setSelected] = useState(null)            // mc: chosen index
+  const [selectedSet, setSelectedSet] = useState(new Set()) // selectAll: chosen indices
+  const [submitted, setSubmitted] = useState(false)         // selectAll: has user submitted
+  const [answerCorrect, setAnswerCorrect] = useState(null)  // for explanation display
+  const [answers, setAnswers] = useState([])
   const [done, setDone] = useState(false)
   const [reviewMode, setReviewMode] = useState(false)
   const [reviewIndex, setReviewIndex] = useState(0)
 
   const q = questions[index]
-  const answered = selected !== null
+  const isSA = q.type === 'selectAll'
+  const answered = isSA ? submitted : selected !== null
 
   function choose(i) {
-    if (answered) return
-    const correct = i === q.answerIndex
-    setSelected(i)
+    if (isSA) {
+      if (submitted) return
+      setSelectedSet(prev => {
+        const next = new Set(prev)
+        if (next.has(i)) next.delete(i); else next.add(i)
+        return next
+      })
+    } else {
+      if (answered) return
+      const correct = i === q.answerIndex
+      setSelected(i)
+      setAnswerCorrect(correct)
+      recordAnswer(q.id, correct)
+      setAnswers(prev => [...prev, { questionIndex: index, selectedIndex: i, correct }])
+    }
+  }
+
+  function submitSelectAll() {
+    if (submitted || selectedSet.size === 0) return
+    const correct =
+      selectedSet.size === q.answerIndices.length &&
+      q.answerIndices.every(i => selectedSet.has(i))
+    setSubmitted(true)
+    setAnswerCorrect(correct)
     recordAnswer(q.id, correct)
-    setAnswers(prev => [...prev, { questionIndex: index, selectedIndex: i, correct }])
+    setAnswers(prev => [...prev, {
+      questionIndex: index,
+      selectedIndices: [...selectedSet],
+      correct,
+    }])
   }
 
   function next() {
     if (index < questions.length - 1) {
       setIndex(i => i + 1)
       setSelected(null)
+      setSelectedSet(new Set())
+      setSubmitted(false)
+      setAnswerCorrect(null)
     } else {
       setDone(true)
     }
@@ -206,12 +245,18 @@ function QuizSession({ questions: rawQuestions, onExit }) {
       if (e.target.tagName !== 'BODY' && e.target.tagName !== 'MAIN') return
       if (done || reviewMode) return
       const num = parseInt(e.key)
-      if (num >= 1 && num <= q.choices.length && !answered) choose(num - 1)
-      if ((e.key === 'Enter' || e.key === 'ArrowRight') && answered) next()
+      if (isSA) {
+        if (num >= 1 && num <= q.choices.length && !submitted) choose(num - 1)
+        if (e.key === 'Enter' && !submitted && selectedSet.size > 0) submitSelectAll()
+        if ((e.key === 'Enter' || e.key === 'ArrowRight') && submitted) next()
+      } else {
+        if (num >= 1 && num <= q.choices.length && !answered) choose(num - 1)
+        if ((e.key === 'Enter' || e.key === 'ArrowRight') && answered) next()
+      }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [answered, index, done, reviewMode])
+  }, [answered, index, done, reviewMode, isSA, submitted, selectedSet])
 
   // ── Results screen ──
   if (done && !reviewMode) {
@@ -251,6 +296,8 @@ function QuizSession({ questions: rawQuestions, onExit }) {
     const missed = answers.filter(a => !a.correct)
     const entry = missed[reviewIndex]
     const rq = questions[entry.questionIndex]
+    const rqSA = rq.type === 'selectAll'
+
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
@@ -260,21 +307,39 @@ function QuizSession({ questions: rawQuestions, onExit }) {
 
         <div className="card p-6 space-y-5">
           {rq.image && <img src={rq.image} alt="" className="max-w-full max-h-40 object-contain rounded-xl" />}
+          {rqSA && (
+            <p className="text-xs font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">
+              Select all that apply
+            </p>
+          )}
           <p className="text-lg font-semibold leading-snug">{rq.question}</p>
           <div className="space-y-2">
-            {rq.choices.map((choice, i) => (
-              <div key={i} className={`rounded-xl px-4 py-3 text-sm font-medium border-2
-                ${i === rq.answerIndex
-                  ? 'border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
-                  : i === entry.selectedIndex
-                    ? 'border-red-300 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
-                    : 'border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-500'
-                }`}>
-                {choice}
-                {i === rq.answerIndex && ' ✓'}
-                {i === entry.selectedIndex && i !== rq.answerIndex && ' ✗'}
-              </div>
-            ))}
+            {rq.choices.map((choice, i) => {
+              const isCorrect = rqSA ? rq.answerIndices.includes(i) : i === rq.answerIndex
+              const wasSelected = rqSA
+                ? (entry.selectedIndices ?? []).includes(i)
+                : i === entry.selectedIndex
+
+              let cls, badge
+              if (isCorrect && wasSelected) {
+                cls = 'border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
+                badge = ' ✓'
+              } else if (isCorrect && !wasSelected) {
+                cls = 'border-amber-400 bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700'
+                badge = ' ✓ missed'
+              } else if (!isCorrect && wasSelected) {
+                cls = 'border-red-300 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
+                badge = ' ✗'
+              } else {
+                cls = 'border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-500'
+                badge = ''
+              }
+              return (
+                <div key={i} className={`rounded-xl px-4 py-3 text-sm font-medium border-2 ${cls}`}>
+                  {choice}{badge}
+                </div>
+              )
+            })}
           </div>
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 text-sm text-slate-600 dark:text-slate-300">
             <span className="font-semibold">Explanation: </span>{rq.explanation}
@@ -308,39 +373,95 @@ function QuizSession({ questions: rawQuestions, onExit }) {
 
       <div className="card p-6 space-y-5">
         {q.image && <img src={q.image} alt="" className="max-w-full max-h-40 object-contain rounded-xl" />}
+
+        {isSA && (
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">
+            Select all that apply
+          </p>
+        )}
+
         <p className="text-lg font-semibold leading-snug">{q.question}</p>
 
         <div className="space-y-2.5">
           {q.choices.map((choice, i) => {
-            let style = 'border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/20'
-            if (answered) {
-              if (i === q.answerIndex) {
-                style = 'border-2 border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
-              } else if (i === selected) {
-                style = 'border-2 border-red-400 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
+            let style
+            let badge = ''
+
+            if (isSA) {
+              const isSelected = selectedSet.has(i)
+              if (!submitted) {
+                style = isSelected
+                  ? 'border-2 border-accent-400 bg-accent-50 dark:bg-accent-900/20 text-accent-800 dark:text-accent-200'
+                  : 'border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/20'
               } else {
-                style = 'border-2 border-slate-100 dark:border-slate-800 text-slate-400 dark:text-slate-600'
+                const isCorrect = q.answerIndices.includes(i)
+                if (isCorrect && isSelected) {
+                  style = 'border-2 border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
+                  badge = ' ✓'
+                } else if (isCorrect && !isSelected) {
+                  style = 'border-2 border-amber-400 bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700'
+                  badge = ' ✓ missed'
+                } else if (!isCorrect && isSelected) {
+                  style = 'border-2 border-red-400 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
+                  badge = ' ✗'
+                } else {
+                  style = 'border-2 border-slate-100 dark:border-slate-800 text-slate-400 dark:text-slate-600'
+                }
+              }
+            } else {
+              style = 'border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/20'
+              if (answered) {
+                if (i === q.answerIndex) {
+                  style = 'border-2 border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
+                  badge = ' ✓'
+                } else if (i === selected) {
+                  style = 'border-2 border-red-400 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
+                  badge = ' ✗'
+                } else {
+                  style = 'border-2 border-slate-100 dark:border-slate-800 text-slate-400 dark:text-slate-600'
+                }
               }
             }
+
             return (
               <button
                 key={i}
                 onClick={() => choose(i)}
-                disabled={answered}
-                className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left transition-all ${style}
-                            disabled:cursor-default`}
+                disabled={isSA ? submitted : answered}
+                className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left transition-all ${style} disabled:cursor-default`}
               >
+                {/* Checkbox indicator for selectAll (before submitting) */}
+                {isSA && !submitted && (
+                  <span className={`inline-block w-4 h-4 mr-2 border-2 rounded align-middle flex-shrink-0 transition-colors
+                    ${selectedSet.has(i)
+                      ? 'bg-accent-500 border-accent-500'
+                      : 'border-slate-400 dark:border-slate-500'}`}
+                  />
+                )}
                 <span className="text-xs font-bold opacity-50 mr-2">{i + 1}</span>
-                {choice}
+                {choice}{badge}
               </button>
             )
           })}
         </div>
 
+        {/* Submit button — selectAll only, before submitting */}
+        {isSA && !submitted && (
+          <div className="flex justify-end">
+            <button
+              onClick={submitSelectAll}
+              disabled={selectedSet.size === 0}
+              className="btn-primary disabled:opacity-40"
+            >
+              Submit
+            </button>
+          </div>
+        )}
+
         {answered && (
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 text-sm text-slate-600 dark:text-slate-300">
             <span className="font-semibold">
-              {selected === q.answerIndex ? '✓ Correct! ' : '✗ Incorrect. '}
+              {answerCorrect ? '✓ Correct! ' : '✗ Incorrect. '}
             </span>
             {q.explanation}
           </div>

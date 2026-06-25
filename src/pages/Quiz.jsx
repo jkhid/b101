@@ -391,7 +391,7 @@ function QuizSession({ questions: rawQuestions, onExit }) {
               const isSelected = selectedSet.has(i)
               if (!submitted) {
                 style = isSelected
-                  ? 'border-2 border-accent-400 bg-accent-50 dark:bg-accent-900/20 text-accent-800 dark:text-accent-200'
+                  ? 'border-2 border-accent-500 bg-accent-100 dark:bg-accent-900/40 text-accent-900 dark:text-accent-100'
                   : 'border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/20'
               } else {
                 const isCorrect = q.answerIndices.includes(i)
@@ -428,15 +428,17 @@ function QuizSession({ questions: rawQuestions, onExit }) {
                 key={i}
                 onClick={() => choose(i)}
                 disabled={isSA ? submitted : answered}
-                className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left transition-all ${style} disabled:cursor-default`}
+                className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left transition-colors select-none touch-manipulation ${style} disabled:cursor-default`}
               >
                 {/* Checkbox indicator for selectAll (before submitting) */}
                 {isSA && !submitted && (
-                  <span className={`inline-block w-4 h-4 mr-2 border-2 rounded align-middle flex-shrink-0 transition-colors
+                  <span className={`inline-flex items-center justify-center w-5 h-5 mr-2.5 border-2 rounded align-middle flex-shrink-0 transition-colors
                     ${selectedSet.has(i)
-                      ? 'bg-accent-500 border-accent-500'
+                      ? 'bg-accent-500 border-accent-500 text-white'
                       : 'border-slate-400 dark:border-slate-500'}`}
-                  />
+                  >
+                    {selectedSet.has(i) && <span className="text-white text-xs leading-none">✓</span>}
+                  </span>
                 )}
                 <span className="text-xs font-bold opacity-50 mr-2">{i + 1}</span>
                 {choice}{badge}
@@ -447,7 +449,12 @@ function QuizSession({ questions: rawQuestions, onExit }) {
 
         {/* Submit button — selectAll only, before submitting */}
         {isSA && !submitted && (
-          <div className="flex justify-end">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-slate-500 dark:text-slate-400">
+              {selectedSet.size === 0
+                ? 'Select one or more answers'
+                : `${selectedSet.size} selected`}
+            </span>
             <button
               onClick={submitSelectAll}
               disabled={selectedSet.size === 0}

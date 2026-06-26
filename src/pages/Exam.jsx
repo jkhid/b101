@@ -64,12 +64,19 @@ function shuffle(arr) {
 }
 
 function shuffleQuestion(q) {
-  const indexed = q.choices.map((text, i) => ({ text, isCorrect: i === q.answerIndex }))
+  const isSA = q.type === 'selectAll'
+  const indexed = q.choices.map((text, i) => ({
+    text,
+    isCorrect: isSA ? (q.answerIndices ?? []).includes(i) : i === q.answerIndex,
+  }))
   const shuffled = shuffle(indexed)
   return {
     ...q,
     choices: shuffled.map(c => c.text),
-    answerIndex: shuffled.findIndex(c => c.isCorrect),
+    ...(isSA
+      ? { answerIndices: shuffled.reduce((acc, c, i) => c.isCorrect ? [...acc, i] : acc, []) }
+      : { answerIndex: shuffled.findIndex(c => c.isCorrect) }
+    ),
   }
 }
 
@@ -308,6 +315,14 @@ function Selector({ onStart, examHistory, initialPresetId }) {
   )
 }
 
+function isAnswerCorrect(q, sel) {
+  if (q.type === 'selectAll') {
+    if (!Array.isArray(sel) || sel.length === 0) return false
+    return sel.length === q.answerIndices.length && q.answerIndices.every(x => sel.includes(x))
+  }
+  return sel === q.answerIndex
+}
+
 // ─── Active exam session ───────────────────────────────────────────────────────
 
 function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) {
@@ -337,7 +352,7 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
     if (submitCalled.current) return
     submitCalled.current = true
     timeSaved.current = totalSecs - timeLeft
-    const score = questions.filter((q, i) => selections[i] === q.answerIndex).length
+    const score = questions.filter((q, i) => isAnswerCorrect(q, selections[i])).length
     saveAttempt({
       chapterId: presetId ?? (Array.isArray(chapterIds) ? chapterIds.join(',') : chapterIds),
       presetId: presetId ?? null,
@@ -355,7 +370,7 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
 
   // ── Results ──────────────────────────────────────────────────────────────────
   if (submitted) {
-    const score = questions.filter((q, i) => selections[i] === q.answerIndex).length
+    const score = questions.filter((q, i) => isAnswerCorrect(q, selections[i])).length
     const pct = Math.round((score / questions.length) * 100)
     const usedMin = Math.floor(timeSaved.current / 60)
     const usedS   = timeSaved.current % 60
@@ -364,7 +379,7 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
     questions.forEach((q, i) => {
       if (!sections[q.section]) sections[q.section] = { correct: 0, total: 0 }
       sections[q.section].total++
-      if (selections[i] === q.answerIndex) sections[q.section].correct++
+      if (isAnswerCorrect(q, selections[i])) sections[q.section].correct++
     })
     const secBreakdown = Object.entries(sections)
       .map(([k, v]) => ({ label: k, ...v, pct: Math.round((v.correct / v.total) * 100) }))
@@ -414,24 +429,33 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
           <div className="card p-6 space-y-4">
             <div className="flex items-center justify-between">
               <DifficultyBadge difficulty={rq.difficulty} />
-              <span className={`text-sm font-semibold ${sel === rq.answerIndex ? 'text-green-600 dark:text-green-400' : 'text-red-500'}`}>
-                {sel === rq.answerIndex ? '✓ Correct' : sel === undefined ? '— Skipped' : '✗ Incorrect'}
+              <span className={`text-sm font-semibold ${isAnswerCorrect(rq, sel) ? 'text-green-600 dark:text-green-400' : 'text-red-500'}`}>
+                {isAnswerCorrect(rq, sel) ? '✓ Correct'
+                  : (rq.type === 'selectAll' ? (!Array.isArray(sel) || sel.length === 0) : sel === undefined) ? '— Skipped'
+                  : '✗ Incorrect'}
               </span>
             </div>
             {rq.image && <img src={rq.image} alt="" className="max-w-full max-h-40 object-contain rounded-xl" />}
+            {rq.type === 'selectAll' && (
+              <p className="text-xs font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">Select all that apply</p>
+            )}
             <p className="font-semibold leading-snug">{rq.question}</p>
             <div className="space-y-2">
-              {rq.choices.map((choice, i) => (
-                <div key={i} className={`rounded-xl px-4 py-3 text-sm border-2
-                  ${i === rq.answerIndex
-                    ? 'border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
-                    : i === sel
-                      ? 'border-red-300 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
-                      : 'border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-500'
-                  }`}>
-                  {choice}
+              {rq.choices.map((choice, i) => {
+                const rqSA = rq.type === 'selectAll'
+                const isCorrect = rqSA ? rq.answerIndices.includes(i) : i === rq.answerIndex
+                const wasSelected = rqSA ? (Array.isArray(sel) && sel.includes(i)) : i === sel
+                let cls
+                if (isCorrect && wasSelected)       cls = 'border-green-400 bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700'
+                else if (isCorrect && !wasSelected) cls = 'border-amber-400 bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700'
+                else if (!isCorrect && wasSelected) cls = 'border-red-300 bg-red-50 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700'
+                else                                cls = 'border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-500'
+                return (
+                <div key={i} className={`rounded-xl px-4 py-3 text-sm border-2 ${cls}`}>
+                  {choice}{rqSA && isCorrect && !wasSelected ? ' ✓ missed' : ''}
                 </div>
-              ))}
+                )
+              })}
             </div>
             <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 text-sm text-slate-600 dark:text-slate-300">
               <span className="font-semibold">Explanation: </span>{rq.explanation}
@@ -449,6 +473,24 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
 
   // ── Active question ───────────────────────────────────────────────────────────
   const q = questions[index]
+  const isSA = q.type === 'selectAll'
+  const currentSel = selections[index]  // number (mc) | number[] (selectAll) | undefined
+
+  function handleChoice(i) {
+    if (isSA) {
+      setSelections(s => {
+        const cur = Array.isArray(s[index]) ? s[index] : []
+        const next = cur.includes(i) ? cur.filter(x => x !== i) : [...cur, i]
+        return { ...s, [index]: next }
+      })
+    } else {
+      setSelections(s => ({ ...s, [index]: i }))
+    }
+  }
+
+  function choiceSelected(i) {
+    return isSA ? (Array.isArray(currentSel) && currentSel.includes(i)) : currentSel === i
+  }
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
@@ -470,23 +512,38 @@ function ExamSession({ questions, durationMins, chapterIds, presetId, onExit }) 
           <span className="text-xs text-slate-400">{q.section}</span>
         </div>
         {q.image && <img src={q.image} alt="" className="max-w-full max-h-40 object-contain rounded-xl" />}
+        {isSA && (
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">
+            Select all that apply
+          </p>
+        )}
         <p className="text-lg font-semibold leading-snug">{q.question}</p>
 
         <div className="space-y-2.5">
-          {q.choices.map((choice, i) => (
-            <button
-              key={i}
-              onClick={() => setSelections(s => ({ ...s, [index]: i }))}
-              className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left border-2 transition-all
-                ${selections[index] === i
-                  ? 'border-accent-500 bg-accent-50 text-accent-800 dark:bg-accent-900/30 dark:text-accent-300 dark:border-accent-600'
-                  : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-300 hover:bg-accent-50/50 dark:hover:bg-accent-900/10'
-                }`}
-            >
-              <span className="text-xs font-bold opacity-40 mr-2">{i + 1}</span>
-              {choice}
-            </button>
-          ))}
+          {q.choices.map((choice, i) => {
+            const sel = choiceSelected(i)
+            return (
+              <button
+                key={i}
+                onClick={() => handleChoice(i)}
+                className={`w-full rounded-xl px-4 py-3.5 text-sm font-medium text-left border-2 transition-colors select-none touch-manipulation
+                  ${sel
+                    ? 'border-accent-500 bg-accent-100 text-accent-900 dark:bg-accent-900/40 dark:text-accent-100 dark:border-accent-500'
+                    : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-accent-300 hover:bg-accent-50/50 dark:hover:bg-accent-900/10'
+                  }`}
+              >
+                {isSA && (
+                  <span className={`inline-flex items-center justify-center w-5 h-5 mr-2.5 border-2 rounded align-middle flex-shrink-0 transition-colors
+                    ${sel ? 'bg-accent-500 border-accent-500 text-white' : 'border-slate-400 dark:border-slate-500'}`}
+                  >
+                    {sel && <span className="text-white text-xs leading-none">✓</span>}
+                  </span>
+                )}
+                <span className="text-xs font-bold opacity-40 mr-2">{i + 1}</span>
+                {choice}
+              </button>
+            )
+          })}
         </div>
       </div>
 

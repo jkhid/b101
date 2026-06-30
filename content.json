@@ -3423,18 +3423,22 @@
       "sections": [
         {
           "id": "4.1",
-          "title": "All Living Things Use Energy"
+          "title": "All Cells Capture and Use Energy"
         },
         {
           "id": "4.2",
-          "title": "ATP Is the Cell's Energy Currency"
+          "title": "Networks of Chemical Reactions Sustain Life"
         },
         {
           "id": "4.3",
-          "title": "Enzymes Speed Reactions"
+          "title": "ATP Is Cellular Energy Currency"
         },
         {
           "id": "4.4",
+          "title": "Enzymes Speed Biochemical Reactions"
+        },
+        {
+          "id": "4.5",
           "title": "Membrane Transport"
         }
       ],
@@ -3465,7 +3469,7 @@
         },
         {
           "id": "ch4-fc-004",
-          "section": "4.2",
+          "section": "4.3",
           "front": "ATP structure",
           "back": "Adenosine triphosphate = adenine + ribose + 3 phosphate groups. The bond between the second and third phosphates stores potential energy. ATP is the universal energy currency of all cells.",
           "difficulty": "easy",
@@ -3473,7 +3477,7 @@
         },
         {
           "id": "ch4-fc-005",
-          "section": "4.2",
+          "section": "4.3",
           "front": "ATP hydrolysis reaction and energy yield",
           "back": "ATP + H2O -> ADP + Pi + energy (~7.3 kcal/mol). Breaking the terminal phosphate bond releases free energy that drives cellular work: muscle contraction, active transport, biosynthesis. ADP is recharged back to ATP by cellular respiration.",
           "difficulty": "medium",
@@ -3481,7 +3485,7 @@
         },
         {
           "id": "ch4-fc-006",
-          "section": "4.2",
+          "section": "4.3",
           "front": "Substrate-level vs. oxidative phosphorylation",
           "back": "Substrate-level phosphorylation: ATP made by directly transferring a phosphate from a substrate to ADP (e.g., in glycolysis and Krebs cycle). Oxidative phosphorylation: ATP made using energy from an electron transport chain + chemiosmosis (inner mitochondrial membrane).",
           "difficulty": "hard",
@@ -3489,7 +3493,7 @@
         },
         {
           "id": "ch4-fc-007",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Activation energy and how enzymes lower it",
           "back": "Activation energy (Ea) is the minimum energy required to start a reaction. Enzymes lower Ea by orienting substrates, stressing bonds, and providing a favorable microenvironment. They do NOT change the overall delta G of the reaction.",
           "difficulty": "medium",
@@ -3497,7 +3501,7 @@
         },
         {
           "id": "ch4-fc-008",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Active site, substrate, and enzyme-substrate complex",
           "back": "The active site is the specific region on an enzyme where substrate binds. Substrate + enzyme -> enzyme-substrate complex -> products released + enzyme recycled. Active-site shape is complementary to the substrate.",
           "difficulty": "easy",
@@ -3505,7 +3509,7 @@
         },
         {
           "id": "ch4-fc-009",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Induced fit model",
           "back": "When the substrate enters the active site, the enzyme changes shape slightly to grip the substrate more tightly. This induced fit differs from the rigid 'lock-and-key' model and better explains why enzymes are specific yet flexible.",
           "difficulty": "medium",
@@ -3513,7 +3517,7 @@
         },
         {
           "id": "ch4-fc-010",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Temperature and pH effects on enzymes",
           "back": "Each enzyme has an optimal temperature and pH. Too hot: denaturation (weak bonds break, protein unfolds, active site lost). Too cold: slower reaction rate. Wrong pH: denatures enzyme or disrupts substrate binding. Human body enzymes optimal near 37 degrees C and pH 7.4.",
           "difficulty": "medium",
@@ -3521,7 +3525,7 @@
         },
         {
           "id": "ch4-fc-011",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Cofactors vs. coenzymes",
           "back": "Cofactors: inorganic ions (Mg2+, Zn2+, Fe2+) that assist enzyme catalysis. Coenzymes: organic non-protein helpers (NAD+, FAD, coenzyme A; many derived from vitamins) that carry chemical groups or electrons between reactions. Both are required for enzyme function.",
           "difficulty": "hard",
@@ -3529,7 +3533,7 @@
         },
         {
           "id": "ch4-fc-012",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Competitive inhibitor",
           "back": "Structurally resembles the substrate; competes for the ACTIVE SITE. Reversible: increasing substrate concentration can displace the inhibitor. Example: statins compete with the normal substrate of HMG-CoA reductase, reducing cholesterol synthesis.",
           "difficulty": "medium",
@@ -3537,7 +3541,7 @@
         },
         {
           "id": "ch4-fc-013",
-          "section": "4.3",
+          "section": "4.4",
           "front": "Non-competitive (allosteric) inhibitor",
           "back": "Binds the ALLOSTERIC SITE (not the active site), causing a conformational change that reduces enzyme activity. Cannot be overcome by adding more substrate. Allosteric regulation allows end-product feedback to shut off a metabolic pathway.",
           "difficulty": "medium",
@@ -3545,7 +3549,7 @@
         },
         {
           "id": "ch4-fc-014",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Simple diffusion",
           "back": "Net movement of a substance from HIGH to LOW concentration, driven by the concentration gradient. Passive — no ATP needed. Reaches equilibrium when concentrations equalize. Small, nonpolar molecules (O2, CO2) diffuse freely through the lipid bilayer.",
           "difficulty": "easy",
@@ -3553,7 +3557,7 @@
         },
         {
           "id": "ch4-fc-015",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Osmosis",
           "back": "Diffusion of WATER through a selectively permeable membrane from LOW solute (high water) to HIGH solute (low water) concentration. Passive. Continues until solute concentrations equalize or pressure builds to oppose it (osmotic pressure).",
           "difficulty": "medium",
@@ -3561,7 +3565,7 @@
         },
         {
           "id": "ch4-fc-016",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Isotonic, hypotonic, hypertonic — effects on animal cells",
           "back": "Isotonic: same solute outside as inside — no net water movement. Hypotonic: less solute outside — water enters, cell swells; may lyse (osmotic lysis). Hypertonic: more solute outside — water leaves, cell shrinks (crenation). IV fluids must be isotonic.",
           "difficulty": "medium",
@@ -3569,7 +3573,7 @@
         },
         {
           "id": "ch4-fc-017",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Facilitated diffusion vs. active transport",
           "back": "Facilitated diffusion: PASSIVE; channel or carrier proteins; HIGH to LOW concentration; no ATP (e.g., glucose via GLUT transporters). Active transport: requires ATP; pump proteins; moves AGAINST gradient LOW to HIGH (e.g., Na+/K+ pump).",
           "difficulty": "medium",
@@ -3577,7 +3581,7 @@
         },
         {
           "id": "ch4-fc-018",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Sodium-potassium (Na+/K+) pump",
           "back": "Active transport protein: pumps 3 Na+ OUT and 2 K+ IN per ATP hydrolyzed. Creates electrochemical gradients used for nerve impulses, muscle contraction, and secondary active transport. Net movement of positive charge out keeps cell interior negative.",
           "difficulty": "hard",
@@ -3585,7 +3589,7 @@
         },
         {
           "id": "ch4-fc-019",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Endocytosis — phagocytosis, pinocytosis, receptor-mediated",
           "back": "Endocytosis: cell engulfs extracellular material into a vesicle (uses energy). Phagocytosis ('cell eating'): ingests large particles/bacteria (macrophages). Pinocytosis ('cell drinking'): takes in fluid + dissolved solutes. Receptor-mediated: specific molecules bind surface receptors before engulfment.",
           "difficulty": "medium",
@@ -3593,11 +3597,81 @@
         },
         {
           "id": "ch4-fc-020",
-          "section": "4.4",
+          "section": "4.5",
           "front": "Exocytosis",
           "back": "Vesicles inside the cell fuse with the plasma membrane and release contents outside. Used to secrete hormones (insulin), neurotransmitters, digestive enzymes, and extracellular matrix proteins. The opposite of endocytosis.",
           "difficulty": "easy",
           "image": null
+        },
+        {
+          "id": "ch4-fc-021",
+          "section": "4.2",
+          "difficulty": "easy",
+          "front": "Metabolism",
+          "back": "The sum of all chemical reactions occurring in a cell. Includes anabolic reactions (build complex molecules from simple ones, require energy) and catabolic reactions (break down complex molecules, release energy)."
+        },
+        {
+          "id": "ch4-fc-022",
+          "section": "4.2",
+          "difficulty": "medium",
+          "front": "Oxidation vs. reduction (redox reactions)",
+          "back": "Oxidation = LOSS of electrons (and energy) from a molecule. Reduction = GAIN of electrons (and energy). The two always occur together: one molecule's oxidation requires another's reduction. Most energy transformations in cells happen via these redox reactions."
+        },
+        {
+          "id": "ch4-fc-023",
+          "section": "4.2",
+          "difficulty": "medium",
+          "front": "Electron transport chain (ETC)",
+          "back": "A series of membrane proteins that pass electrons from one to the next, like a relay. Each protein is reduced (gains the electron) then oxidized (passes it on). Small amounts of energy are released at each step and harvested by the cell. Central to both photosynthesis (ch. 5) and cellular respiration (ch. 6)."
+        },
+        {
+          "id": "ch4-fc-024",
+          "section": "4.3",
+          "difficulty": "medium",
+          "front": "Phosphorylation",
+          "back": "Transfer of a phosphate group from one molecule (often ATP) to another. Has two possible effects: (1) energizes the target molecule, making it more likely to react further, or (2) changes the target protein's shape, which can power transport or other work."
+        },
+        {
+          "id": "ch4-fc-025",
+          "section": "4.3",
+          "difficulty": "easy",
+          "front": "Why cells can't stockpile ATP",
+          "back": "ATP's high-energy phosphate bonds make it too unstable for long-term storage. A typical cell uses ~2 billion ATP molecules/minute and recycles its entire ATP pool roughly every minute. Cells store energy instead as fats, starch, and glycogen, converting them to ATP via cellular respiration as needed."
+        },
+        {
+          "id": "ch4-fc-026",
+          "section": "4.4",
+          "difficulty": "medium",
+          "front": "Positive feedback (vs. negative feedback)",
+          "back": "A process that reinforces/amplifies an existing change rather than reversing it (opposite of negative feedback/feedback inhibition). Much rarer in biology. Example: blood clotting — each clotting reaction stimulates the next, accelerating clot formation until the pathway shuts off (negative feedback) once bleeding stops."
+        },
+        {
+          "id": "ch4-fc-027",
+          "section": "4.5",
+          "difficulty": "easy",
+          "front": "Selective permeability & concentration gradient",
+          "back": "Selective permeability: a membrane allows some substances through freely but blocks others. Concentration gradient: a difference in solute concentration between two neighboring regions. Gradients store potential energy and dissipate (disappear) over time unless energy is spent to maintain them."
+        },
+        {
+          "id": "ch4-fc-028",
+          "section": "4.5",
+          "difficulty": "medium",
+          "front": "Aquaporins",
+          "back": "Channel proteins that increase the rate of water movement across a membrane (speed up osmosis). Found in bacteria, plants, and animals. Example: kidney cells control how much water is reabsorbed into the body by changing the number of aquaporins in their membranes."
+        },
+        {
+          "id": "ch4-fc-029",
+          "section": "4.5",
+          "difficulty": "hard",
+          "front": "ATP synthase & chemiosmosis",
+          "back": "A membrane channel protein that lets H+ ions flow down their concentration gradient (a form of facilitated diffusion) and uses the released energy to synthesize ATP from ADP + Pi. This process — chemiosmosis — powers ATP production in both photosynthesis and cellular respiration."
+        },
+        {
+          "id": "ch4-fc-030",
+          "section": "4.5",
+          "difficulty": "easy",
+          "front": "Turgor pressure",
+          "back": "The force of water pressing the plasma membrane against the cell wall in a plant cell that has taken up water by osmosis. Keeps plants rigid and upright. Lost turgor (e.g., in a hypertonic or dry environment) causes wilting."
         }
       ],
       "quiz": [
@@ -3633,7 +3707,7 @@
         },
         {
           "id": "ch4-q-003",
-          "section": "4.2",
+          "section": "4.3",
           "question": "When a cell hydrolyzes ATP to ADP + Pi, what is directly used to power cellular work?",
           "choices": [
             "The phosphate ion alone",
@@ -3648,7 +3722,7 @@
         },
         {
           "id": "ch4-q-004",
-          "section": "4.3",
+          "section": "4.4",
           "question": "An enzyme speeds up a reaction primarily by:",
           "choices": [
             "Increasing the free energy of the products",
@@ -3663,7 +3737,7 @@
         },
         {
           "id": "ch4-q-005",
-          "section": "4.3",
+          "section": "4.4",
           "question": "The induced fit model of enzyme action states that:",
           "choices": [
             "The active site is rigid and only perfectly shaped substrates can bind",
@@ -3678,7 +3752,7 @@
         },
         {
           "id": "ch4-q-006",
-          "section": "4.3",
+          "section": "4.4",
           "question": "An enzyme that works at 37 degrees C is suddenly exposed to 90 degrees C. What happens?",
           "choices": [
             "The enzyme works faster due to higher kinetic energy — substrate molecules collide with the active site at a much higher frequency",
@@ -3693,7 +3767,7 @@
         },
         {
           "id": "ch4-q-007",
-          "section": "4.3",
+          "section": "4.4",
           "question": "A drug molecule is shaped like the normal substrate and binds the enzyme's active site, blocking the reaction. The drug is acting as a:",
           "choices": [
             "Non-competitive inhibitor",
@@ -3708,7 +3782,7 @@
         },
         {
           "id": "ch4-q-008",
-          "section": "4.3",
+          "section": "4.4",
           "question": "An allosteric inhibitor binds a site OTHER than the active site and reduces enzyme activity. Adding more substrate:",
           "choices": [
             "Will overcome the inhibition because more substrate outcompetes the inhibitor",
@@ -3723,7 +3797,7 @@
         },
         {
           "id": "ch4-q-009",
-          "section": "4.4",
+          "section": "4.5",
           "question": "A red blood cell placed in pure water will:",
           "choices": [
             "Shrink because the cell's solutes draw water in",
@@ -3738,7 +3812,7 @@
         },
         {
           "id": "ch4-q-010",
-          "section": "4.4",
+          "section": "4.5",
           "question": "Cucumbers shrivel when placed in very salty brine. This occurs because:",
           "choices": [
             "Salt molecules actively pump water out through specialized ion transport proteins that exchange Na+ for water molecules",
@@ -3753,7 +3827,7 @@
         },
         {
           "id": "ch4-q-011",
-          "section": "4.4",
+          "section": "4.5",
           "question": "Glucose cannot diffuse through the lipid bilayer on its own. How does it enter most cells?",
           "choices": [
             "Active transport via the Na+/K+ ATPase pump, which uses ATP to move glucose against its concentration gradient",
@@ -3768,7 +3842,7 @@
         },
         {
           "id": "ch4-q-012",
-          "section": "4.4",
+          "section": "4.5",
           "question": "The Na+/K+ pump moves ions AGAINST their concentration gradients. This is an example of:",
           "choices": [
             "Simple diffusion — small nonpolar molecules move down their concentration gradient through the bilayer without proteins or energy",
@@ -3783,7 +3857,7 @@
         },
         {
           "id": "ch4-q-013",
-          "section": "4.4",
+          "section": "4.5",
           "question": "Which pair of transport processes are BOTH passive (no ATP needed)?",
           "choices": [
             "Active transport and facilitated diffusion",
@@ -3798,7 +3872,7 @@
         },
         {
           "id": "ch4-q-014",
-          "section": "4.4",
+          "section": "4.5",
           "question": "A goblet cell in the intestinal lining secretes mucus into the intestinal lumen. Which process is used?",
           "choices": [
             "Phagocytosis — the plasma membrane extends pseudopods to engulf solid particles, pulling them into the cell in a membrane-bound vesicle",
@@ -3813,7 +3887,7 @@
         },
         {
           "id": "ch4-q-015",
-          "section": "4.4",
+          "section": "4.5",
           "question": "A white blood cell surrounds and engulfs a bacterial cell. Which process is this?",
           "choices": [
             "Exocytosis — secretory vesicles fuse with the plasma membrane and release their contents into the extracellular space",
@@ -3828,7 +3902,7 @@
         },
         {
           "id": "ch4-q-016",
-          "section": "ch4-s1",
+          "section": "4.1",
           "difficulty": "easy",
           "question": "The Second Law of Thermodynamics states that:",
           "choices": [
@@ -3842,7 +3916,7 @@
         },
         {
           "id": "ch4-q-017",
-          "section": "ch4-s1",
+          "section": "4.3",
           "difficulty": "medium",
           "question": "In metabolism, coupled reactions refer to:",
           "choices": [
@@ -3856,7 +3930,7 @@
         },
         {
           "id": "ch4-q-018",
-          "section": "ch4-s2",
+          "section": "4.4",
           "difficulty": "medium",
           "question": "A cofactor differs from a coenzyme in that a cofactor is typically:",
           "choices": [
@@ -3870,7 +3944,7 @@
         },
         {
           "id": "ch4-q-019",
-          "section": "ch4-s2",
+          "section": "4.4",
           "difficulty": "medium",
           "question": "Feedback inhibition in a metabolic pathway means the end product:",
           "choices": [
@@ -3884,7 +3958,7 @@
         },
         {
           "id": "ch4-q-020",
-          "section": "ch4-s3",
+          "section": "4.5",
           "difficulty": "medium",
           "question": "A plant cell placed in a hypotonic solution will:",
           "choices": [
@@ -3898,7 +3972,7 @@
         },
         {
           "id": "ch4-q-021",
-          "section": "ch4-s3",
+          "section": "4.5",
           "difficulty": "easy",
           "question": "Which of these crosses the plasma membrane by SIMPLE diffusion, requiring no transport proteins?",
           "choices": [
@@ -3912,7 +3986,7 @@
         },
         {
           "id": "ch4-q-022",
-          "section": "ch4-s3",
+          "section": "4.5",
           "difficulty": "medium",
           "question": "Receptor-mediated endocytosis differs from phagocytosis because:",
           "choices": [
@@ -3926,7 +4000,7 @@
         },
         {
           "id": "ch4-q-023",
-          "section": "ch4-s1",
+          "section": "4.1",
           "difficulty": "hard",
           "question": "Why must organisms continuously consume food and energy?",
           "choices": [
@@ -3940,7 +4014,7 @@
         },
         {
           "id": "ch4-q-024",
-          "section": "ch4-s3",
+          "section": "4.5",
           "difficulty": "medium",
           "question": "The Na⁺/K⁺ pump moves 3 Na⁺ OUT and 2 K⁺ IN per ATP hydrolyzed. This is an example of:",
           "choices": [
@@ -3954,7 +4028,7 @@
         },
         {
           "id": "ch4-q-025",
-          "section": "ch4-s2",
+          "section": "4.4",
           "difficulty": "medium",
           "question": "An enzyme's active site binds its substrate. After the reaction, the enzyme is:",
           "choices": [
@@ -3965,6 +4039,246 @@
           ],
           "answerIndex": 1,
           "explanation": "Enzymes are catalysts — they lower activation energy and are released unchanged after each reaction, allowing them to catalyze thousands to millions of reactions per second. Enzyme activity is not consumed by the reaction; it is regulated by temperature, pH, inhibitors, and substrate concentration."
+        },
+        {
+          "id": "ch4-q-026",
+          "section": "4.2",
+          "difficulty": "easy",
+          "question": "In a redox reaction, the molecule that LOSES electrons is said to be:",
+          "choices": [
+            "Reduced",
+            "Oxidized",
+            "Hydrolyzed",
+            "Phosphorylated"
+          ],
+          "answerIndex": 1,
+          "explanation": "Oxidation = loss of electrons (and their energy). The molecule that loses electrons is oxidized; the molecule that gains those electrons is reduced. The two always happen together in a redox reaction."
+        },
+        {
+          "id": "ch4-q-027",
+          "section": "4.2",
+          "difficulty": "medium",
+          "question": "Why must oxidation and reduction always occur together in a redox reaction?",
+          "choices": [
+            "Enzymes require both processes to remain catalytically active during the reaction",
+            "Electrons removed from one molecule during oxidation must be accepted by another molecule, reducing it",
+            "ATP can only be synthesized when oxidation and reduction cancel out each other's energy change",
+            "Cells evolved redox reactions specifically to balance pH on both sides of the membrane"
+          ],
+          "answerIndex": 1,
+          "explanation": "Electrons don't simply disappear — when one molecule loses electrons (is oxidized), another molecule must accept them (is reduced). This pairing is why the two halves of a redox reaction always occur simultaneously."
+        },
+        {
+          "id": "ch4-q-028",
+          "section": "4.2",
+          "difficulty": "medium",
+          "question": "In an electron transport chain, as an electron passes from one membrane protein to the next:",
+          "choices": [
+            "A large burst of energy is released all at once at the final step only",
+            "Small amounts of energy are released at each step, which the cell harvests for other reactions",
+            "The electron gains additional energy at each protein, building toward a maximum at the chain's end",
+            "The chain consumes ATP at each step to keep the electron moving forward"
+          ],
+          "answerIndex": 1,
+          "explanation": "Electron transport chains release energy gradually, in small steps, as electrons pass from protein to protein — like a ball rolling down a staircase rather than off a cliff. The cell captures this stepwise energy release to do useful work, such as pumping H+ ions."
+        },
+        {
+          "id": "ch4-q-029",
+          "section": "4.2",
+          "difficulty": "hard",
+          "type": "selectAll",
+          "question": "Which of the following are true of metabolism? (Select all that apply.)",
+          "choices": [
+            "It includes anabolic reactions that build complex molecules from simpler ones",
+            "It includes catabolic reactions that break down complex molecules",
+            "It refers only to reactions that occur inside mitochondria",
+            "Photosynthesis and cellular respiration are both part of an organism's metabolism",
+            "Every metabolic reaction either absorbs or releases energy"
+          ],
+          "answerIndices": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "Metabolism is the sum of ALL chemical reactions in a cell — anabolic (building) and catabolic (breaking down) — not limited to any one organelle. Photosynthesis and respiration are major metabolic pathways, and every reaction either requires energy input (endergonic) or releases energy (exergonic)."
+        },
+        {
+          "id": "ch4-q-030",
+          "section": "4.2",
+          "difficulty": "easy",
+          "question": "Electron transport chains are used in which of the following processes?",
+          "choices": [
+            "Only cellular respiration",
+            "Only photosynthesis",
+            "Both photosynthesis and cellular respiration",
+            "Neither — ETCs are unique to anaerobic fermentation"
+          ],
+          "answerIndex": 2,
+          "explanation": "Both photosynthesis (chapter 5) and cellular respiration (chapter 6) rely on electron transport chains embedded in membranes to harvest energy released as electrons move from protein to protein."
+        },
+        {
+          "id": "ch4-q-031",
+          "section": "4.3",
+          "difficulty": "medium",
+          "type": "selectAll",
+          "question": "Phosphorylation — the transfer of a phosphate group from ATP to a target molecule — can have which of the following effects? (Select all that apply.)",
+          "choices": [
+            "Energize the target molecule, making it more likely to bond with other molecules",
+            "Change the shape of a target protein",
+            "Permanently destroy the target molecule's chemical structure",
+            "Convert the target molecule directly into a new strand of DNA"
+          ],
+          "answerIndices": [
+            0,
+            1
+          ],
+          "explanation": "Phosphorylation has two possible effects: energizing a target molecule (e.g., activating glucose so it bonds into a polysaccharide) or changing a protein's shape (which can power transport or other mechanical work). It does not destroy the molecule or create DNA."
+        },
+        {
+          "id": "ch4-q-032",
+          "section": "4.3",
+          "difficulty": "medium",
+          "question": "Why don't cells store large reserves of ATP for later use?",
+          "choices": [
+            "ATP's high-energy phosphate bonds are too unstable for long-term storage, so cells store fats and carbohydrates instead",
+            "Cells lack the enzymes needed to synthesize ATP in advance of when it's needed",
+            "ATP is too large a molecule to be stored in the cytoplasm without forming toxic aggregates",
+            "Storing ATP would interfere with the cell's ability to maintain osmotic balance"
+          ],
+          "answerIndex": 0,
+          "explanation": "ATP's unstable phosphate bonds make it a poor long-term energy-storage molecule. Cells instead store energy in fats, starch, and glycogen, and convert these to ATP via cellular respiration as it's needed — recycling the entire ATP pool roughly once a minute."
+        },
+        {
+          "id": "ch4-q-033",
+          "section": "4.3",
+          "difficulty": "easy",
+          "question": "A cell uses ATP to attach a phosphate group to glucose, making it more reactive and able to bond into a polysaccharide chain. This is an example of:",
+          "choices": [
+            "Hydrolysis",
+            "Phosphorylation",
+            "Oxidative decarboxylation",
+            "Allosteric inhibition"
+          ],
+          "answerIndex": 1,
+          "explanation": "This is phosphorylation — ATP transfers a phosphate group to glucose, energizing it ('activating' it) so it is more likely to react and bond with other molecules to build a polysaccharide."
+        },
+        {
+          "id": "ch4-q-034",
+          "section": "4.4",
+          "difficulty": "medium",
+          "question": "Which scenario best describes POSITIVE feedback?",
+          "choices": [
+            "An amino acid accumulates and inhibits the first enzyme in its own synthesis pathway",
+            "Blood clotting reactions accelerate each other once a clot begins forming, speeding up further clotting",
+            "A noncompetitive inhibitor binds an allosteric site, reducing enzyme activity as product builds up",
+            "Rising body temperature triggers sweating, which cools the body back toward normal"
+          ],
+          "answerIndex": 1,
+          "explanation": "Positive feedback reinforces an existing change rather than reversing it. In blood clotting, each step of the clotting cascade stimulates the next, accelerating the process — the opposite of negative feedback (options 0, 2, and 3, which all reverse a change)."
+        },
+        {
+          "id": "ch4-q-035",
+          "section": "4.4",
+          "difficulty": "easy",
+          "question": "How does positive feedback differ from negative feedback (feedback inhibition) in biological systems?",
+          "choices": [
+            "Positive feedback reinforces an existing change; negative feedback reverses a change. Positive feedback is much rarer in organisms",
+            "Positive feedback always requires ATP; negative feedback never does",
+            "Positive feedback only regulates enzyme pathways; negative feedback only regulates membrane transport",
+            "Positive feedback occurs in plants; negative feedback occurs in animals"
+          ],
+          "answerIndex": 0,
+          "explanation": "Negative feedback (feedback inhibition) is the common regulatory strategy in cells — it reverses changes to maintain stability, like an end product shutting down its own synthesis pathway. Positive feedback amplifies a change instead and is much rarer; blood clotting is a classic example."
+        },
+        {
+          "id": "ch4-q-036",
+          "section": "4.5",
+          "difficulty": "easy",
+          "question": "Aquaporins are membrane proteins that:",
+          "choices": [
+            "Pump hydrogen ions against their concentration gradient using ATP",
+            "Increase the rate of water movement across a membrane during osmosis",
+            "Actively transport glucose into the cell against its concentration gradient",
+            "Detect extracellular signals and trigger receptor-mediated endocytosis"
+          ],
+          "answerIndex": 1,
+          "explanation": "Aquaporins are channel proteins that speed up osmosis by increasing how quickly water crosses a membrane. Kidney cells, for example, control water reabsorption by adjusting how many aquaporins are in their membranes."
+        },
+        {
+          "id": "ch4-q-037",
+          "section": "4.5",
+          "difficulty": "medium",
+          "question": "ATP synthase is best described as a membrane protein that:",
+          "choices": [
+            "Actively pumps ATP out of the mitochondrion using energy from glucose",
+            "Allows H+ ions to flow down their concentration gradient and uses that energy to synthesize ATP",
+            "Hydrolyzes ATP to power the sodium-potassium pump directly",
+            "Catalyzes the breakdown of glucose into pyruvate during glycolysis"
+          ],
+          "answerIndex": 1,
+          "explanation": "ATP synthase is a channel that lets H+ ions move down their concentration gradient (facilitated diffusion) — and harnesses the energy released to attach a phosphate to ADP, generating ATP. This process, called chemiosmosis, powers ATP production in both photosynthesis and respiration."
+        },
+        {
+          "id": "ch4-q-038",
+          "section": "4.5",
+          "difficulty": "hard",
+          "question": "Which transport category does ATP synthase's H+ channel belong to?",
+          "choices": [
+            "Active transport, because it produces ATP",
+            "Facilitated diffusion, because H+ moves down its gradient through a channel protein without direct ATP cost",
+            "Simple diffusion, because no protein is involved",
+            "Exocytosis, because it releases a substance from the cell"
+          ],
+          "answerIndex": 1,
+          "explanation": "Even though ATP synthase produces ATP, the H+ ions themselves move passively DOWN their concentration gradient through the channel — that's facilitated diffusion. The energy released by this passive flow is what the enzyme uses to build ATP."
+        },
+        {
+          "id": "ch4-q-039",
+          "section": "4.5",
+          "difficulty": "easy",
+          "question": "A wilted houseplant perks back up after watering. This is best explained by:",
+          "choices": [
+            "Increased turgor pressure as water enters plant cells by osmosis and pushes against the cell wall",
+            "Active transport pumping water molecules directly into the central vacuole",
+            "Exocytosis of stored water from vesicles into the extracellular space",
+            "A drop in turgor pressure as solutes diffuse out of the cell wall"
+          ],
+          "answerIndex": 0,
+          "explanation": "Watering increases the soil's water concentration relative to the plant cells, so water enters by osmosis. The rigid cell wall resists the resulting pressure, creating turgor pressure that makes the plant rigid again. Loss of turgor pressure (not a gain) is what causes wilting."
+        },
+        {
+          "id": "ch4-q-040",
+          "section": "4.5",
+          "difficulty": "medium",
+          "question": "A concentration gradient across a membrane represents:",
+          "choices": [
+            "A form of potential energy that dissipates over time unless energy is spent maintaining it",
+            "A type of covalent bond between two adjacent phospholipids",
+            "Kinetic energy that is immediately lost as heat upon formation",
+            "An enzyme-catalyzed reaction occurring at the membrane surface"
+          ],
+          "answerIndex": 0,
+          "explanation": "A concentration gradient is potential energy — the difference in solute concentration between two regions. Without continued energy input, random molecular motion causes the gradient to dissipate (equalize) over time, just as any other form of potential energy is eventually released."
+        },
+        {
+          "id": "ch4-q-041",
+          "section": "4.5",
+          "difficulty": "hard",
+          "type": "selectAll",
+          "question": "Which of the following are examples of facilitated diffusion? (Select all that apply.)",
+          "choices": [
+            "Glucose entering a cell through a GLUT transporter protein",
+            "H+ ions flowing through ATP synthase down their concentration gradient",
+            "The sodium-potassium pump moving Na+ out and K+ into a cell",
+            "Water moving through an aquaporin channel",
+            "A white blood cell engulfing a bacterium by phagocytosis"
+          ],
+          "answerIndices": [
+            0,
+            1
+          ],
+          "explanation": "Facilitated diffusion is PASSIVE movement (down a concentration gradient) through a channel or carrier protein, with no ATP required — like glucose through GLUT transporters or H+ through ATP synthase. The Na+/K+ pump is active transport (uses ATP, moves against gradients). Water through aquaporins is classified separately as osmosis. Phagocytosis is endocytosis."
         }
       ]
     },
